@@ -1,13 +1,26 @@
 # whitepaper
 whitepaper for 2i2i ~ a novel socio-economic network ~ coin&lt;->meet
 
+# security
+
+## pera/wc
+
 # idea/philosophy: everyone has value
 
 # economic inclusion
 
+range is indefinite via ASA chains
+
 # web3
 
+## start the meeting
+## end the meeting
+
+## zero credit risk
+
 # tokenomics
+
+## frontends
 
 # governance
 
@@ -24,8 +37,13 @@ Why?
 # theory
 
 ## open market for fair value
+## zero credit risk
+
+## rating
 
 # solution
+
+## cancel lock
 
 # adoption
 
@@ -33,10 +51,21 @@ easy adoption
 needs internet
 cheap: less than a cent
 
+example networks that would benefit, i.e. create a revenue stream
+
+gated events: cinemas, readings, concerts, ...
+professionals
+influencers
+friends
+appointment free life
+
 # impact
 
 huge impact
 
-# manner of meeting
+# meeting model
 
 audio, video, ar, vr
+G->H
+N->1
+coins<->webstreams (webstreams=(webstreams,webstream))
