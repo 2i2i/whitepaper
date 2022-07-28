@@ -63,9 +63,47 @@ appointment free life
 
 huge impact
 
-# meeting model
+# media-stream model
 
 audio, video, ar, vr
 G->H
 N->1
 coins<->webstreams (webstreams=(webstreams,webstream))
+
+# market model
+
+v1 assumptions:
+media stream is live
+
+types:
+HighRollers: bid > min
+Chronies: bid == min
+Eccentrics: bid [coin of subjective value]
+Lurkers: bid < min
+
+each type is an ordered list (by time).
+
+zip-algo: combine diff type lists into a single ordered list
+zip-algo is deterministic and depends on a simple H setting and handles setting changes
+
+? Host has min requirement to exchange media-stream ~ req could be qualitative, e.g. have a certain ASA
+
+? some ASAs are considered to have a low supply ~ let's call these NFTs
+? these kind of bids req a min media stream duration ~ else G gets coin/s back
+
+? H gives stream, G gives stream optionally
+
+? if a good is non-exlusive => price is constant, i.e. no point in having a market
+? no media-stream has infinite supply => there exists a theoretical max demand met => ordering required
+
+? Host can change stream
+
+? price is locked for a coin lock
+
+? ??? add bandwidth control to price (higher price, more bandwidth) ~ via p2p network, rationing
+
+? no bandwidth regulation of NFT bids
+
+? streams/trades with max # Gs vs streams with no max # Gs
+
+# settings
