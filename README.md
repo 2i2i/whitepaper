@@ -2,7 +2,7 @@
 
 Assume we have an seller with a finite supply $\mathcal{S}$ and there exists a demand $\mathcal{D}$ consisting of bids.
 
-A market \mathcal{M} is a function that determines the next bid to be serviced[^alltradeissequential]. Formally,
+A market $\mathcal{M}$ is a function that determines the next bid to be serviced[^alltradeissequential]. Formally,
 
 $$\mathcal{M}(\mathcal{S}, \mathcal{D}) = B$$
 
@@ -29,7 +29,7 @@ The sellers sets the following parameters $\mathcal{P}$:
 
 $$\mathcal{P} = (\underline{M}, \mathcal{I})$$
 
-$$\underline{M} \ge 0 \text{ minimum value that a bid needs to have}$$*
+$$\underline{M} \ge 0 \text{ minimum value that a bid needs to have}$$
 
 $$\mathcal{I} = \text{importance}$$
 
@@ -97,6 +97,8 @@ $$\text{lurker (LURK)} \Leftrightarrow B \text{ is objective}\land Q < \underlin
 
 $$\text{subjective (SUBJ)} \Leftrightarrow B \text{ is subjective}$$
 
+We can denote a bid $B$'s category as $\text{BC}(B)$.
+
 ### Importance
 
 The seller defines the importance per bid category
@@ -136,7 +138,7 @@ We want to create a market function such that:
 
 - worst case placement for objective bids are finite and deterministic
 
-- seller is not forced to accept any subjective bid
+- the seller can use it's own subjective value function to value subjective bids
 
 ### Traditional markets as special cases
 
@@ -168,13 +170,84 @@ $$T_i \ne T_j \text{ if } i \ne j$$
 
 that the bids can be sorted chronologically.
 
-Given this chronological ordering, let's group the bids by creating subsequences of constant parameters
+Given this chronological ordering, let's group the bids by creating subsequences of constant parameters:
 
 $$\underbrace{B_1, \ldots, B_{i_1}}_{\mathcal{P}_1}, \underbrace{B_{i_1+1}, \ldots, B_{i_2}}_{\mathcal{P}_2}, \ldots, \underbrace{B_{i_{G_N}+1}, \ldots, B_N}_{\mathcal{P}_{G_N}}$$
 
+that is, changing the parameters $\mathcal{P}$ fixes the current order.
+
+We are left with the task of ordering the bids given constant parameters $\mathcal{P}$.
+
+#### Decimal Importance
+
+The importance $\mathcal{I}$ can be converted into decimals as follows:
+
+$$\mathcal{I}\rightarrow\nu_\square = \frac{\mathcal{I}_\square}{\sum\mathcal{I}} \in [0;1]$$
+
+$$\square\in\\\{\text{CHR}, \text{HR}, \text{LURK}, \text{SUBJ}\\\}$$
+
+We also know that
+
+$$\nu_\text{LURK} = 0$$
+
+$$\sum_\square\nu_\square = 1$$
+
+$$\implies\nu_\text{SUBJ} = 1 - \nu_\text{CHR} - \nu_\text{HR}$$
+
+which means that $\mathcal{I}$ can be represented as a 2-dim vector:
+
+$$\mathcal{I} = \begin{pmatrix} \nu_\text{CHR} \\ \nu_\text{HR} \end{pmatrix}$$
+
+#### Define $\mathcal{M}$
+
+Given the previous max $\sum\mathcal{I}-1$ number of bids $[B_n,\ldots,B_m]$ with $0\le m-n<\sum\mathcal{I}-1$, we want to choose the next bid $B_\text{next}$.
+
+First, we choose the next bid category as the category that brings our realized importance closer($\Delta$[^distance]) to the target importance as set by the seller.
+
+Calculate the realized importance $\hat{\mathcal{I}}$ including an assumed next bid category $\text{BC}(B_\text{next})$:
+
+$$\hat{\mathcal{I}}=\begin{pmatrix} \hat{\nu}_\text{CHR} \\ \hat{\nu}_\text{HR} \end{pmatrix}$$
+
+$$\hat{\nu}_\square = \frac{\#\\\{\text{BC}(B_i)==\square\\\}_{i=n\ldots m+1}}{m-n+1}$$
+
+$$\text{BC}(B_\text{next})=\underset{\text{BC}(B_\text{next})}{\text{argmin }}\Delta(\mathcal{I}, \hat{\mathcal{I}})$$
+
+If the next category should be $\text{CHR}$, then $B_\text{next}$ is the chronogically next $\text{CHR}$ bid available.
+
+If the next category should be $\text{HR}$, then $B_\text{next}$ is the value ordered next $\text{HR}$ bid available.
+
+If the next category should be $\text{SUBJ}$, then $B_\text{next}$ can be chosen in the two following ways:
+
+1. $B_\text{next}$ is the chronogically next $\text{SUBJ}$ bid available. However, the seller can choose to decline the bid, using it's subjective value function.
+
+1. Let the seller choose one xor none from all the existing $\text{SUBJ}$ bids. This gives a partial ordering of the bids.
+
+A discussion of the choices is found here: [^fullsubjchoiceisbetter].
+
+
+Note the next category can never be $\text{LURK}$, as $\nu_\text{LURK}=0$. The seller can convert $\text{LURK}$ bids into $\text{CHR}$ or $\text{HR}$ bids by changing the parameters[^whylurkers].
+
+### Worst placement
+
+### Fairest market = optimal price
+
+## Supply = Time
+Everyone has time
+Time is most valuable
+
+# Smart contracts
+
+## Zero credit risk
+
+## Infinite inclusivity
+
+## Currency
 
 
 
+[^fullsubjchoiceisbetter]: todo
+
+[^distance]: We can choose any 2-dim distance measure, e.g. the Euclidean metric.
 
 [^practicalchrony]: todo
 
