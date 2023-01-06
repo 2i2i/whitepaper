@@ -1,3 +1,5 @@
+# WORK IN PROGRESS
+
 Assume we have an seller with a finite supply $\mathcal{S}$ and there exists a demand $\mathcal{D}$ consisting of bids.
 
 A market \mathcal{M} is a function that determines the next bid to be serviced[^alltradeissequential]. Formally,
