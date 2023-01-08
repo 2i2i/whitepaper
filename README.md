@@ -89,11 +89,11 @@ This means, without loss of generality, we can assume[^assuming] all objective b
 
 Assuming[^assuming] that the min value $\underline{M}$ is also in the base currency, we define[^practicalchrony] the following 4 bid categories:
 
-$$\text{chrony (CHR)} \Leftrightarrow B \text{ is objective}\land Q = \underline{M}$$
+$$\text{chrony (CHR)} \Leftrightarrow B \text{ is objective}\land q = \underline{M}$$
 
-$$\text{highroller (HR)} \Leftrightarrow B \text{ is objective}\land Q > \underline{M}$$
+$$\text{highroller (HR)} \Leftrightarrow B \text{ is objective}\land q > \underline{M}$$
 
-$$\text{lurker (LURK)} \Leftrightarrow B \text{ is objective}\land Q < \underline{M}$$
+$$\text{lurker (LURK)} \Leftrightarrow B \text{ is objective}\land q < \underline{M}$$
 
 $$\text{subjective (SUBJ)} \Leftrightarrow B \text{ is subjective}$$
 
@@ -229,35 +229,113 @@ Note the next category can never be $\text{LURK}$, as $\nu_\text{LURK}=0$. The s
 
 ### Worst placement
 
+
+
 ### Fairest market = optimal price
 
+Consider:
+
+- We accomodate any supply of arbitrarily small or large value.
+- We allow any currency, whether those with objective value or any other, i.e. of subjective value.
+- We define currency as an arbitrarily fungible bundle of energy and information
+- We accomodate the entire region of objective value currencies possible (below, at and above the min value).
+- We create the fairest (according to importance) sequence of servicing the demand
+- We allow for all types of dynamics incl. traditional markets as special cases, set via simple parameters.
+
+All these superlatives make this market model the most open possible.
+
+Assuming liquidity, this market model thus provides the fairest valuation of any supply.
+
+
 ## Supply = Time
-Everyone has time
-Time is most valuable
+Everyone has time.
+
+Time is most valuable.
+
+2i2i is provably finds fairest value.
+
+Using 2i2i for time makes most sense:
+Use the optimal system for the most important
+
+In a futuristic society, people could replace appointments with such a market for their time. Whenever you choose to interact with a person, instead of consulting a appointment schedule, consult the market. Importance and urgency are all expressed via the energy and information contained in every bid. 
+
+When supply=time, all currencies are per $\Delta T$. Current technology already allows $\Delta T \le 1 \text{ sec}$.
+
+Imagine the entire world harvesting the fairest amount of energy in exchange for the whatever information they can provide. 2i2i could in theory jump start the provably fairest economy ever.
 
 # Smart contracts
 
+Smart contracts are autonomous, decentralized apps. 
+
 ## Zero credit risk
+
+Using smart contracts eliminates credit risk, as the smart contract acts as an autonomous escrow.
+
+Bids can be locked in the smart contracts until there is agreement on the a completed trade.
+
+## Implementation
+
+Implementation details would depend on each specific smart contract framework.
+
+The most difficult part is defining what exactly a agreement looks like on a smart contract.
 
 ## Infinite inclusivity
 
+A currency is called fungible if it is available in varying units.
+
+We can define the fungability $\mathbb{F}$ of a currency as the ratio of a base unit to the minimal unit.
+
+E.g. 
+
+$$\mathbb{F}(\text{USD})=10^2$$
+
+$$\mathbb{F}(\text{BTC})=10^8$$
+
+$$\mathbb{F}(\text{NFT})=10^0=1$$
+
+### Constant Factor Stablecoin (CFS)
+
+A CFS is a simple, permissionless smart contract that exchanges 1 unit of a currency $\text{ccy}_1$ for $\phi$ units of $\text{ccy}_2$ and vice-versa, as available.
+
+A CFS never rounds and only makes exact exchanges.
+
+Using a constant factor stablecoin, we can increase the fungability of any currency.
+
+### Inclusiveness
+
+We can assume that any possible supply $\mathcal{S}$ has positive value, even if miniscule. The old financial systems did not allow the transfer of smaller values than ca. 0.01 USD. 
+
+Using a CFS[^inclusiveness], we can transact arbitrarily small (or large) values.
+
+Hence, every kind and quantity of any supply is supported by this market.
+It is infinitely inclusive.
+
 ## Currency
 
+We define a currency as any bundle of energy and information that can be transmitted from one entity to another, incl. bundles containing no energy (only information) xor only energy (no information).
 
+This provides the most generic definition possible.
+
+[^inclusiveness]: A CFS chain could be constructed to reach arbitrarily small (but positive) or large values.
+
+[^fungeNFTs]: Even an NFT could in this manner be broken into smaller pieces. Having art with higher fungability increases the size of the demand, however it also seems to decrease the perceived value by many.
 
 [^fullsubjchoiceisbetter]: todo
 
 [^distance]: We can choose any 2-dim distance measure, e.g. the Euclidean metric.
 
-[^practicalchrony]: todo
+[^practicalchrony]: For practical reasons, such as real time FX changes, it can make sense to define the categories with a precision $\epsilon>0$, and the relative distance $\delta=\ln{\frac{q}{\underline{M}}}$ as follows
 
-[^whylurkers]: todo
+$$\text{chrony (CHR)} \Leftrightarrow B \text{ is objective}\land |\delta| \le \epsilon$$
+
+$$\text{highroller (HR)} \Leftrightarrow B \text{ is objective}\land \delta > \epsilon$$
+
+$$\text{lurker (LURK)} \Leftrightarrow B \text{ is objective}\land \delta < -\epsilon$$
+
+
+[^whylurkers]: Lurkers complete the picture of the demand. They allow the seller to realise the optimal minimum price. Traditional markets leave sellers blind to this entire bottom part of the demand.
 
 [^assuming]: These are not real 'assumptions'. These prerequisites that we are asking for are trivial and hence we are "assuming" them to be true already. Real 'assumptions' can be wrong.
-
-[^mostinclusive]: todo
-
-[^fairest]: todo
 
 [^energyandinfo]: Energy and information as defined by the Sciences, as two fundamental elements of nature.
 
