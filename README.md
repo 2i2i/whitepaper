@@ -1,5 +1,15 @@
 # WORK IN PROGRESS
 
+# <p align="center">2i2i ~ the fairest market model</p>
+#### <p align="center">1m1@2i2i.app</p>
+
+<br></br>
+## <p align="center">Abstract</p>
+<p align="center">This paper describes a novel, multi-dimensional, infinitely inclusive market model. The described model yields infinite types of new market dynamics and traditional markets as special cases, based on very few parameters. Traditional market types become special cases. As the market allows any supply of arbitrarily small or large value to be traded in any currency, incl. subjective value currencies, any resulting liquid market must then find the optimal value of the supply, making this the fairest market possible. </p>
+<br></br>
+
+## 1. Definitions
+
 Assume we have an seller with a finite supply $\mathcal{S}$ and there exists a demand $\mathcal{D}$ consisting of bids.
 
 A market $\mathcal{M}$ is a function that determines the next bid to be serviced[^alltradeissequential]. Formally,
@@ -9,23 +19,23 @@ $$\mathcal{M}(\mathcal{S}, \mathcal{D}) = B$$
 where $B \in \mathcal{D}$ is a bid.
 
 
-More generally, we add a parameter to the market $\mathcal{M}$ to output the bid after some given bid. 
+More generally, we add a parameter to the market $\mathcal{M}$ to output the bid **next after** some given bid $B$.
 
-$$\mathcal{M}(\mathcal{S}, \mathcal{D}, B') = B$$
+$$\mathcal{M}(\mathcal{S}, \mathcal{D}, B) = B_\text{next}$$
 
 $$B, B' \in \mathcal{D} \cup \\\{∅\\\}$$
 
-$\mathcal{M}(\mathcal{S}, \mathcal{D}, ∅)$ gives the first bid to be serviced and $\mathcal{M}(\mathcal{S}, \mathcal{D}, B') = ∅$ means $B'$ is the last bid to be serviced.
+$\mathcal{M}(\mathcal{S}, \mathcal{D}, ∅)$ gives the **first** bid to be serviced and $\mathcal{M}(\mathcal{S}, \mathcal{D}, B) = ∅$ means $B$ is the **last** bid to be serviced.
 
-This then allows for an ordering of the bids.
+This then allows for an **ordering** of the bids.
 
 $$\mathcal{D} = [B_1, \ldots, B_N]$$
 
-In this paper, we will define a partial ordering and a full ordering that is fairest[^fairest], most inclusive[^mostinclusive] and accomodates all[^allmarkets] types of markets, as well as innovating new types of markets with a generic framework.
+In this paper, we will define a partial ordering and a full ordering that is **fairest[^fairest]**, most **inclusive[^mostinclusive]** and accomodates all[^allmarkets] types of markets, as well as **innovating** new types of markets with a generic framework.
 
 
 
-The sellers sets the following parameters $\mathcal{P}$:
+The sellers sets the following **parameters** $\mathcal{P}$:
 
 $$\mathcal{P} = (\underline{M}, \mathcal{I})$$
 
@@ -126,7 +136,7 @@ $$\mathcal{I} = (\mathcal{I}_\text{CHR} = 2, \mathcal{I}_\text{HR} = 3, \mathcal
 
 then, on average, any subsequence of bids serviced should contain 2 chrony and 3 highroller bids.
 
-### Market function goals
+## 2. The market $\mathcal{M}$
 
 We want to create a market function such that:
 
@@ -136,7 +146,7 @@ We want to create a market function such that:
 
 - highroller bids are serviced in order of value
 
-- worst case placement for objective bids are finite and deterministic
+- worst case placement for chrony bids are finite and deterministic[^chronyonlyworstcasefinite]
 
 - the seller can use it's own subjective value function to value subjective bids
 
@@ -148,7 +158,7 @@ $$\underline{M} = \text{fixed price}$$
 
 $$\mathcal{I} = (\mathcal{I}_\text{CHR} = 1, \mathcal{I}_\text{HR} = 0, \mathcal{I}_\text{LURK} = 0, \mathcal{I}_\text{SUBJ} = 0)$$
 
-#### Bidding
+#### Auction
 
 $$\underline{M} = \text{min price}$$
 
@@ -227,11 +237,21 @@ A discussion of the choices is found here: [^fullsubjchoiceisbetter].
 
 Note the next category can never be $\text{LURK}$, as $\nu_\text{LURK}=0$. The seller can convert $\text{LURK}$ bids into $\text{CHR}$ or $\text{HR}$ bids by changing the parameters[^whylurkers].
 
-### Worst placement
+### Worst placement is "deterministic"
 
+Any bid can always choose to cancel, thereby improving the placement of all bids behind it. Hence we only need to talk about the worst case.
 
+**After** the creation of a bid $B$, we can simulate, as a mind experiment, the arrival of infinite many bids of all categories possible:
 
-### Fairest market = optimal price
+- Worst and best placement for a $\text{LURK}$ bid is $\infty$.
+
+- Worst placement for a $\text{SUBJ}$ bid is $\infty$, the seller uses it's own subjective value function.
+
+- Worst placement for a $\text{HR}$ bid is $\infty$, as other the market could theoretically increase and stay higher.
+
+- Worst placement for a $\text{CHR}$ bid is finite and deterministic, according the importance $\mathcal{I}$.
+
+### Most open market + liquidity => optimal price
 
 Consider:
 
@@ -240,46 +260,27 @@ Consider:
 - We define currency as an arbitrarily fungible bundle of energy and information
 - We accomodate the entire region of objective value currencies possible (below, at and above the min value).
 - We create the fairest (according to importance) sequence of servicing the demand
-- We allow for all types of dynamics incl. traditional markets as special cases, set via simple parameters.
+- We allow for infinite types of dynamics incl. traditional markets as special cases, set via simple parameters.
 
 All these superlatives make this market model the most open possible.
 
 Assuming liquidity, this market model thus provides the fairest valuation of any supply.
 
 
-## Supply = Time
-Everyone has time.
 
-Time is most valuable.
+## Smart contracts
 
-2i2i is provably finds fairest value.
+Smart contracts are autonomous, decentralized apps. The described market model should be implemented as smart contracts for the following reasons: Zero credit risk, infinite inclusivity, perfect transparency[^auditabilityisbetter], ability to yse any kind of currency.
 
-Using 2i2i for time makes most sense:
-Use the optimal system for the most important
-
-In a futuristic society, people could replace appointments with such a market for their time. Whenever you choose to interact with a person, instead of consulting a appointment schedule, consult the market. Importance and urgency are all expressed via the energy and information contained in every bid. 
-
-When supply=time, all currencies are per $\Delta T$. Current technology already allows $\Delta T \le 1 \text{ sec}$.
-
-Imagine the entire world harvesting the fairest amount of energy in exchange for the whatever information they can provide. 2i2i could in theory jump start the provably fairest economy ever.
-
-# Smart contracts
-
-Smart contracts are autonomous, decentralized apps. 
-
-## Zero credit risk
+### Zero credit risk
 
 Using smart contracts eliminates credit risk, as the smart contract acts as an autonomous escrow.
 
 Bids can be locked in the smart contracts until there is agreement on the a completed trade.
 
-## Implementation
+Each seller could own it's own market place.
 
-Implementation details would depend on each specific smart contract framework.
-
-The most difficult part is defining what exactly a agreement looks like on a smart contract.
-
-## Infinite inclusivity
+### Infinite inclusivity
 
 A currency is called fungible if it is available in varying units.
 
@@ -293,7 +294,7 @@ $$\mathbb{F}(\text{BTC})=10^8$$
 
 $$\mathbb{F}(\text{NFT})=10^0=1$$
 
-### Constant Factor Stablecoin (CFS)
+#### Constant Factor Stablecoin (CFS)
 
 A CFS is a simple, permissionless smart contract that exchanges 1 unit of a currency $\text{ccy}_1$ for $\phi$ units of $\text{ccy}_2$ and vice-versa, as available.
 
@@ -310,11 +311,40 @@ Using a CFS[^inclusiveness], we can transact arbitrarily small (or large) values
 Hence, every kind and quantity of any supply is supported by this market.
 It is infinitely inclusive.
 
-## Currency
+### Currency
 
 We define a currency as any bundle of energy and information that can be transmitted from one entity to another, incl. bundles containing no energy (only information) xor only energy (no information).
 
 This provides the most generic definition possible.
+
+### Implementation
+
+Implementation details would depend on each specific smart contract framework.
+
+The most difficult part is defining what exactly a agreement on the execution of a trade looks like on a smart contract given the blockchain.
+
+
+# Open API
+
+We will provide this tech as an open API for any system to use. Anyone that wants to connect any supply to its demand via this provably fairest and most inclusive market model based on smart contracts, will be able to do so easily and focus on creating it's community.
+
+# The widest and most valueble supply is time
+Everyone has time + time is most valuable.
+
+As an 1st example application, we have chosen time as the supply. Available @ https://about.2i2i.app
+
+2i2i is provably finds fairest value for time.
+
+Using 2i2i for time makes most sense:
+Use the optimal system for the most important
+
+In a futuristic society, people could replace appointments with such a market for its time. Whenever you choose to interact with a person, instead of consulting a appointment schedule, consult the market. Importance and urgency are all expressed via the energy and information contained in every bid. 
+
+When supply=time, all currencies are per $\Delta T$. Current technology already allows $\Delta T \le 1 \text{ sec}$.
+
+Imagine the entire world harvesting the fairest amount of energy in exchange for the whatever information they can provide. 2i2i could in theory jump start the provably fairest economy ever.
+
+# Notes
 
 [^inclusiveness]: A CFS chain could be constructed to reach arbitrarily small (but positive) or large values.
 
@@ -344,3 +374,7 @@ $$\text{lurker (LURK)} \Leftrightarrow B \text{ is objective}\land \delta < -\ep
 [^allmarkets]: Is this a formal statement? No, but it seems that it could be formalised, but perhaps with some relaxation, i.e. making the absolute "all" statement still false.
 
 [^alltradeissequential]: Having a finite supply requires ordering of demand. All selling of any supply is approximately sequential. Even selling digital copies of a product that seems unlimited, is in fact limited due to network bandwidth being limited and servers usually order demand on a "first-come, first-serve" basis. When supply is very large vs demand, then modeling a simultaneous trading sequentially, is not any loss at all, as the sequence can simply move very fast, giving the illution of simultaneouity.
+
+[^chronyonlyworstcasefinite]: This is a service guarantee for those bidding the minimum (chrony). A highroller is basically participating in an auction for a sooner service, which is only sooner iff $\mathcal{I}_\text{CHR} < \mathcal{I}_\text{HR}$. An subjective bid might never be serviced, as it depends on the seller's subjective value function. A lurker is by definition never serviced.
+
+[^auditabilityisbetter]: Even better than transparency is privacy with auditibility. This allows entities to maintain private information whilst satisfying society that everything is legal.
