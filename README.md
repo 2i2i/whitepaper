@@ -370,7 +370,8 @@ When supply=time, all currencies are per $\Delta T$. Current technology already 
 
 Imagine the entire world harvesting the fairest amount of energy in exchange for the whatever information they can provide. 2i2i could in theory jump start the provably fairest economy ever.
 
-# Notes
+<br></br><br></br>
+# <b>V.  Notes</b>
 
 [^inclusiveness]: A CFS chain could be constructed to reach arbitrarily small (but positive) or large values.
 
