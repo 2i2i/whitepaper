@@ -1,6 +1,6 @@
 # WORK IN PROGRESS
 
-# <p align="center">2i2i ~ the fairest market model</p>
+# <b><p align="center">2i2i ~ the fairest market model</p></b>
 #### <p align="center">1m1@2i2i.app</p>
 
 <br></br>
@@ -8,34 +8,38 @@
 <p align="center">This paper describes a novel, multi-dimensional, infinitely inclusive market model. The described model yields infinite types of new market dynamics and traditional markets as special cases, based on very few parameters. Traditional market types become special cases. As the market allows any supply of arbitrarily small or large value to be traded in any currency, incl. subjective value currencies, any resulting liquid market must then find the optimal value of the supply, making this the fairest market possible. </p>
 <br></br>
 
-## 1. Definitions
+# <b>I. Definitions</b>
 
-Assume we have an seller with a finite supply $\mathcal{S}$ and there exists a demand $\mathcal{D}$ consisting of bids.
+<br></br>
+## Market
 
-A market $\mathcal{M}$ is a function that determines the next bid to be serviced[^alltradeissequential]. Formally,
+Assume we have an **seller** with a finite **supply** $\mathcal{S}$ and there exists a **demand** $\mathcal{D}$ consisting of **bid**s.
+
+A **market** $\mathcal{M}$ is a function that determines the next **bid** to be serviced[^alltradeissequential]. Formally,
 
 $$\mathcal{M}(\mathcal{S}, \mathcal{D}) = B$$
 
-where $B \in \mathcal{D}$ is a bid.
+where $B \in \mathcal{D}$ is a **bid**.
 
 
-More generally, we add a parameter to the market $\mathcal{M}$ to output the bid **next after** some given bid $B$.
+More generally, we add a parameter to the **market** $\mathcal{M}$ to output the **bid** *next after* some given **bid** $B$.
 
 $$\mathcal{M}(\mathcal{S}, \mathcal{D}, B) = B_\text{next}$$
 
 $$B, B' \in \mathcal{D} \cup \\\{∅\\\}$$
 
-$\mathcal{M}(\mathcal{S}, \mathcal{D}, ∅)$ gives the **first** bid to be serviced and $\mathcal{M}(\mathcal{S}, \mathcal{D}, B) = ∅$ means $B$ is the **last** bid to be serviced.
+$\mathcal{M}(\mathcal{S}, \mathcal{D}, ∅)$ gives the *first* **bid** to be **serviced** and $\mathcal{M}(\mathcal{S}, \mathcal{D}, B) = ∅$ means $B$ is the *last* **bid** to be **serviced**.
 
-This then allows for an **ordering** of the bids.
+This then allows for an **ordering** of the **bid**s.
 
 $$\mathcal{D} = [B_1, \ldots, B_N]$$
 
-In this paper, we will define a partial ordering and a full ordering that is **fairest[^fairest]**, most **inclusive[^mostinclusive]** and accomodates all[^allmarkets] types of markets, as well as **innovating** new types of markets with a generic framework.
+In this paper, we will define a partial **ordering** and a total **ordering** that is **fairest[^fairest]**, most **inclusive[^mostinclusive]** and accomodates all[^allmarkets] types of **market**s, as well as innovating new types of **market**s with a generic framework.
 
+<br></br>
+## Parameters
 
-
-The sellers sets the following **parameters** $\mathcal{P}$:
+The **seller** sets the following **parameters** $\mathcal{P}$:
 
 $$\mathcal{P} = (\underline{M}, \mathcal{I})$$
 
@@ -43,11 +47,12 @@ $$\underline{M} \ge 0 \text{ minimum value that a bid needs to have}$$
 
 $$\mathcal{I} = \text{importance}$$
 
-The importance $\mathcal{I}$ will be explained later. It is a setting of the seller defining the importance of the different categories of bids.
+The **importance** $\mathcal{I}$ will be explained later. It is a setting of the **seller** defining the importance of the different categories of **bid**s.
 
+<br></br>
+## Bid
 
-
-Each bid $B$ looks as follows:
+Each **bid** $B$ looks as follows:
 
 $$B = (T, A, \mathcal{P})$$
 
@@ -57,21 +62,24 @@ $$A = \text{(q, ccy, FX)} \text{ is the amount of the bid}$$
 
 $$\mathcal{P} = \text{ the sellers parameters } T$$
 
-The amount $A$ contains a quantity $q$, a currency $\text{ccy}$ and an exchange rate to a universal base currency $\text{FX}$, all fixed at time $T$.
+The **amount** $A$ contains a quantity $q$, a **currency** $\text{ccy}$ and an exchange rate to a **base currency** $\text{FX}$, all fixed at time $T$.
 
-A currency $\text{ccy}$ is defined as a bundle of energy and information[^energyandinfo]. Let $\mathcal{C}$ be the universe of all existing currencies.
+<br></br>
+## Currency and FX
+
+A **currency** $\text{ccy}$ is defined as a bundle of energy and information[^energyandinfo]. Let $\mathcal{C}$ be the universe of all existing currencies.
 
 Then
 
 $$\mathcal{C} = \mathcal{C}_\text{obj} \text{  } \dot{\cup} \text{  } \mathcal{C}_\text{sub}$$
 
-that is, any currency either has objective value xor subjective value.
+that is, any **currency** either has objective value xor subjective value.
 
 We choose some
 
 $$\text{ccy}_\text{base} \in \mathcal{C}_\text{obj}$$
 
-as the universal base currency and we define
+as the **base currency** and we define
 
 $$\text{FX}(\text{ccy}) = \text{FX}(\text{ccy}, T) = \text{FX}(\text{ccy}, \text{ccy}_\text{base}, T)$$
 
@@ -84,20 +92,23 @@ and
 $$\text{FX(ccy)} = ∅ \text{  if ccy}\in\mathcal{C}_\text{sub}$$
 
 
-Now we are going to categorise bids. First, we call a bid $B$ $\text{objective}$
+Now we are going to categorise **bid**s. First, we call a **bid** $B$ **objective**
 
 $$B \text{ is objective} \Leftrightarrow \text{ccy} \in \mathcal{C}_\text{obj}$$
 
 if it is in an objective value currency.
 
 
-The amount $A$ of each objective bid can be transformed into the chosen base currency, as follows:
+The **amount** $A$ of each **objective** **bid** can be transformed into the chosen **base currency**, as follows:
 
 $$B(T, A = (q, \text{ccy}, \text{FX}), \mathcal{P}) \rightarrow B_\text{base}(T, A = (\text{FX}\cdot q , \text{ccy}_\text{base}, \text{FX}\equiv 1), \mathcal{P})$$
 
-This means, without loss of generality, we can assume[^assuming] all objective bids to be dominated in the base currency.
+This means, without loss of generality, we can assume[^assuming] all **objective bids** to be denominated in the **base currency**.
 
-Assuming[^assuming] that the min value $\underline{M}$ is also in the base currency, we define[^practicalchrony] the following 4 bid categories:
+<br></br>
+## **Bid** Categories
+
+Assuming[^assuming] that the **min** value $\underline{M}$ is also in the **base currency**, we define[^practicalchrony] the following 4 **bid** categories:
 
 $$\text{chrony (CHR)} \Leftrightarrow B \text{ is objective}\land q = \underline{M}$$
 
@@ -107,11 +118,12 @@ $$\text{lurker (LURK)} \Leftrightarrow B \text{ is objective}\land q < \underlin
 
 $$\text{subjective (SUBJ)} \Leftrightarrow B \text{ is subjective}$$
 
-We can denote a bid $B$'s category as $\text{BC}(B)$.
+We can denote a **bid** $B$'s category as $\text{BC}(B)$.
 
-### Importance
+<br></br>
+## **Importance**
 
-The seller defines the importance per bid category
+The **seller** defines the importance per bid category
 
 $$\mathcal{I} = (\mathcal{I}_\text{CHR}, \mathcal{I}_\text{HR}, \mathcal{I}_\text{LURK}, \mathcal{I}_\text{SUBJ})$$
 
@@ -136,21 +148,27 @@ $$\mathcal{I} = (\mathcal{I}_\text{CHR} = 2, \mathcal{I}_\text{HR} = 3, \mathcal
 
 then, on average, any subsequence of bids serviced should contain 2 chrony and 3 highroller bids.
 
-## 2. The market $\mathcal{M}$
+<br></br>
+<br></br>
+# <b>II. The **market** $\mathcal{M}$ </b>
 
-We want to create a market function such that:
+<br></br>
+## Characteristics
 
-- importance is respected
+We want to create a **market** function such that:
 
-- chrony bids are serviced chronologically
+- **importance** is respected
 
-- highroller bids are serviced in order of value
+- **chrony bid**s are **serviced** chronologically
 
-- worst case placement for chrony bids are finite and deterministic[^chronyonlyworstcasefinite]
+- **highroller bid**s are **serviced** in order of value
 
-- the seller can use it's own subjective value function to value subjective bids
+- worst case placement for **chrony bids** are finite and deterministic[^chronyonlyworstcasefinite]
 
-### Traditional markets as special cases
+- the **seller** can use it's own subjective value function to value **subjective bid**s
+
+<br></br>
+## Traditional **market**s as special cases
 
 #### Fixed price
 
@@ -168,11 +186,12 @@ $$\mathcal{I} = (\mathcal{I}_\text{CHR} = 0, \mathcal{I}_\text{HR} = 1, \mathcal
 
 $$\mathcal{I} = (\mathcal{I}_\text{CHR} = 0, \mathcal{I}_\text{HR} = 0, \mathcal{I}_\text{LURK} = 0, \mathcal{I}_\text{SUBJ} = 1)$$
 
-#### All other cases are mixed, innovative markets and would yield differing dynamics whenever changed
+#### All other cases are mixed, innovative **market**s and would yield differing dynamics whenever changed
 
-## $\mathcal{M}$
-
-### Sort the bids
+<br></br>
+## The algorithm
+<br></br>
+### 1. Sort the bids
 
 We can almost surely assume
 
@@ -188,7 +207,8 @@ that is, changing the parameters $\mathcal{P}$ fixes the current order.
 
 We are left with the task of ordering the bids given constant parameters $\mathcal{P}$.
 
-#### Decimal Importance
+<br></br>
+### 2. Decimal Importance
 
 The importance $\mathcal{I}$ can be converted into decimals as follows:
 
@@ -208,7 +228,8 @@ which means that $\mathcal{I}$ can be represented as a 2-dim vector:
 
 $$\mathcal{I} = \begin{pmatrix} \nu_\text{CHR} \\ \nu_\text{HR} \end{pmatrix}$$
 
-#### Define $\mathcal{M}$
+<br></br>
+### 3. Define $\mathcal{M}$
 
 Given the previous max $\sum\mathcal{I}-1$ number of bids $[B_n,\ldots,B_m]$ with $0\le m-n<\sum\mathcal{I}-1$, we want to choose the next bid $B_\text{next}$.
 
@@ -237,7 +258,8 @@ A discussion of the choices is found here: [^fullsubjchoiceisbetter].
 
 Note the next category can never be $\text{LURK}$, as $\nu_\text{LURK}=0$. The seller can convert $\text{LURK}$ bids into $\text{CHR}$ or $\text{HR}$ bids by changing the parameters[^whylurkers].
 
-### Worst placement is "deterministic"
+<br></br>
+## Worst placement is "deterministic"
 
 Any bid can always choose to cancel, thereby improving the placement of all bids behind it. Hence we only need to talk about the worst case.
 
@@ -251,7 +273,8 @@ Any bid can always choose to cancel, thereby improving the placement of all bids
 
 - Worst placement for a $\text{CHR}$ bid is finite and deterministic, according the importance $\mathcal{I}$.
 
-### Most open market + liquidity => optimal price
+<br></br>
+## Most open market + liquidity => optimal price
 
 Consider:
 
@@ -267,12 +290,12 @@ All these superlatives make this market model the most open possible.
 Assuming liquidity, this market model thus provides the fairest valuation of any supply.
 
 
-
-## Smart contracts
+<br></br><br></br>
+# <b>III. Smart contracts</b>
 
 Smart contracts are autonomous, decentralized apps. The described market model should be implemented as smart contracts for the following reasons: Zero credit risk, infinite inclusivity, perfect transparency[^auditabilityisbetter], ability to yse any kind of currency.
 
-### Zero credit risk
+## Zero credit risk
 
 Using smart contracts eliminates credit risk, as the smart contract acts as an autonomous escrow.
 
@@ -280,7 +303,7 @@ Bids can be locked in the smart contracts until there is agreement on the a comp
 
 Each seller could own it's own market place.
 
-### Infinite inclusivity
+## Infinite inclusivity
 
 A currency is called fungible if it is available in varying units.
 
@@ -294,7 +317,7 @@ $$\mathbb{F}(\text{BTC})=10^8$$
 
 $$\mathbb{F}(\text{NFT})=10^0=1$$
 
-#### Constant Factor Stablecoin (CFS)
+### Constant Factor Stablecoin (CFS)
 
 A CFS is a simple, permissionless smart contract that exchanges 1 unit of a currency $\text{ccy}_1$ for $\phi$ units of $\text{ccy}_2$ and vice-versa, as available.
 
@@ -302,7 +325,7 @@ A CFS never rounds and only makes exact exchanges.
 
 Using a constant factor stablecoin, we can increase the fungability of any currency.
 
-### Inclusiveness
+## Inclusiveness
 
 We can assume that any possible supply $\mathcal{S}$ has positive value, even if miniscule. The old financial systems did not allow the transfer of smaller values than ca. 0.01 USD. 
 
@@ -311,23 +334,26 @@ Using a CFS[^inclusiveness], we can transact arbitrarily small (or large) values
 Hence, every kind and quantity of any supply is supported by this market.
 It is infinitely inclusive.
 
-### Currency
+## Currency
 
 We define a currency as any bundle of energy and information that can be transmitted from one entity to another, incl. bundles containing no energy (only information) xor only energy (no information).
 
 This provides the most generic definition possible.
 
-### Implementation
+## Implementation
 
 Implementation details would depend on each specific smart contract framework.
 
 The most difficult part is defining what exactly a agreement on the execution of a trade looks like on a smart contract given the blockchain.
 
-
-# Open API
-
+<br></br>
+<br></br>
+# <b>IV. Further work</b>
+<br></br>
+Open API
 We will provide this tech as an open API for any system to use. Anyone that wants to connect any supply to its demand via this provably fairest and most inclusive market model based on smart contracts, will be able to do so easily and focus on creating it's community.
 
+<br></br><br></br><br></br>
 # The widest and most valueble supply is time
 Everyone has time + time is most valuable.
 
