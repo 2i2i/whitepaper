@@ -1,7 +1,7 @@
 # WORK IN PROGRESS
 
 # <b><p align="center">2i2i ~ the fairest market model</p></b>
-#### <p align="center">1m1@2i2i.app</p>
+#### <p align="center">1m1@2i2i.app[^acknowledgement]</p>
 
 <br></br>
 ## <p align="center">Abstract</p>
@@ -286,10 +286,10 @@ Any bid can always choose to cancel, thereby improving the placement of all bids
 
 We can assume that any possible supply $\mathcal{S}$ has positive value, even if miniscule. The old world did not allow the transfer of smaller values than some threshold.
 
-Using a chain of CFS[^inclusiveness], defined below, we can transact arbitrarily small (or large) values.
+Using a chain of CFS, defined below, we can transact arbitrarily small (or large) values.
 
 Hence, every kind and quantity of any supply is supported by this market.
-It is infinitely inclusive.
+**It is infinitely inclusive.**
 
 <br></br>
 ## Smart contracts
@@ -374,7 +374,9 @@ Imagine the entire world harvesting the fairest amount of energy in exchange for
 <br></br>
 # <b>V.  Notes</b>
 
-[^inclusiveness]: A CFS chain could be constructed to reach arbitrarily small (but positive) or large values.
+[^mostinclusive]: Considering only supplies of positive value, since we can support arbitrarily small or large values, in any type currency, we are most inclusive.
+
+[^fairest]: The fairest value is achieved in the most open market possible based on the assumption that adding an intelligence to a group of intelligences increases the accuracy of the joined valuation of anything.
 
 [^fungeNFTs]: Even an NFT could in this manner be broken into smaller pieces. Having art with higher fungability increases the size of the demand, however it also seems to decrease the perceived value by many.
 
@@ -384,11 +386,11 @@ Imagine the entire world harvesting the fairest amount of energy in exchange for
 
 [^practicalchrony]: For practical reasons, such as real time FX changes, it can make sense to define the categories with a precision $\epsilon>0$, and the relative distance $\delta=\ln{\frac{q}{\underline{M}}}$ as follows
 
-$$\text{chrony (CHR)} \Leftrightarrow B \text{ is objective}\land |\delta| \le \epsilon$$
+    $$\text{chrony (CHR)} \Leftrightarrow B \text{ is objective}\land |\delta| \le \epsilon$$
 
-$$\text{highroller (HR)} \Leftrightarrow B \text{ is objective}\land \delta > \epsilon$$
+    $$\text{highroller (HR)} \Leftrightarrow B \text{ is objective}\land \delta > \epsilon$$
 
-$$\text{lurker (LURK)} \Leftrightarrow B \text{ is objective}\land \delta < -\epsilon$$
+    $$\text{lurker (LURK)} \Leftrightarrow B \text{ is objective}\land \delta < -\epsilon$$
 
 
 [^whylurkers]: Lurkers complete the picture of the demand. They allow the seller to realise the optimal minimum price. Traditional markets leave sellers blind to this entire bottom part of the demand.
@@ -399,7 +401,7 @@ $$\text{lurker (LURK)} \Leftrightarrow B \text{ is objective}\land \delta < -\ep
 
 [^minvalue]: Every seller has the right to define it's own minimum value for a trade
 
-[^allmarkets]: Is this a formal statement? No, but it seems that it could be formalised, but perhaps with some relaxation, i.e. making the absolute "all" statement still false.
+[^allmarkets]: This can be made a formal statement thanks to us defining **currency** as generally as possible.
 
 [^alltradeissequential]: Having a finite supply requires ordering of demand. All selling of any supply is approximately sequential. Even selling digital copies of a product that seems unlimited, is in fact limited due to network bandwidth being limited and servers usually order demand on a "first-come, first-serve" basis. When supply is very large vs demand, then modeling a simultaneous trading sequentially, is not any loss at all, as the sequence can simply move very fast, giving the illution of simultaneouity.
 
@@ -411,4 +413,4 @@ $$\text{lurker (LURK)} \Leftrightarrow B \text{ is objective}\land \delta < -\ep
 
 [^implementation]: about.2i2i.app is the v1 version with supply=time. A v2 version is being built.
 
-[^acknowledgement]: The information found in this white paper was obtained with the help of Solli Kim. Thank you Solli for sharing your mind.
+[^acknowledgement]: The information found in this white paper was created by 1m1 with the help of Solli Kim. Thank you Solli for sharing your mind.
