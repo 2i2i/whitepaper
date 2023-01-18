@@ -56,7 +56,7 @@ Based on my own intensive research on highly noisy and highly dimensional optimi
 about.2i2i.app is the v1 version with supply=time. A fullv2 version for any supply and fully web3 will be built.
 
 ## whitepaper
-Humanity keeps its reliable knowledge in whitepapers. Besides having an certain look, the important aspects are structure and methodology. Such a paper adds to reliable knowledge if approved by scholars.
+Humanity keeps its reliable knowledge in whitepapers. Besides having an certain look, the important aspects are structure and methodology. Such a paper adds to reliable knowledge if approved by scholars. An archived github seems more powerful than a pdf.
 
 ## acknowledgement
 The information found in this white paper was created by 1m1 with the help of Solli Kim. Thank you Solli for sharing your mind.
