@@ -153,7 +153,7 @@ then, on average, any subsequence of bids serviced should contain 2 chrony and 3
 
 <br></br>
 <br></br>
-# <b>II. The **market** $\mathcal{M}$ </b>
+# <b>II. The market</b> $\mathcal{M}$
 
 <br></br>
 ## Characteristics
