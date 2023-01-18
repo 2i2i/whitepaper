@@ -1,7 +1,7 @@
 # WORK IN PROGRESS
 
 # <b><p align="center">2i2i ~ the fairest market model</p></b>
-#### <p align="center">1m1@2i2i.app[^acknowledgement]</p>
+#### <p align="center">1m1@2i2i.app[1(https://github.com/2i2i/whitepaper/blob/main/Notes.md#mostinclusive)]</p>
 
 <br></br>
 ## <p align="center">Abstract</p>
