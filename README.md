@@ -5,7 +5,8 @@
 
 <br></br>
 ## <p align="center">Abstract</p>
-<p align="center">This paper describes a novel, multi-dimensional, infinitely inclusive market model. The described model yields infinite types of new market dynamics and traditional markets as special cases, based on very few parameters. Traditional market types become special cases. As the market allows any supply of arbitrarily small or large value to be traded in any currency, incl. subjective value currencies, any resulting liquid market must then find the optimal value of the supply, making this the fairest market possible. </p>
+<p align="center">This paper describes a novel, multi-dimensional, infinitely inclusive market model. The described model yields infinite types of new market dynamics and traditional markets as special cases, based on very few parameters. As the market allows any supply of arbitrarily small or large value to be traded in any currency, incl. subjective value currencies, any resulting liquid market must then find the optimal value of the supply, making this the fairest market possible. </p>
+<br></br>
 <br></br>
 
 # <b>I. Definitions</b>
@@ -271,27 +272,15 @@ Any bid can always choose to cancel, thereby improving the placement of all bids
 
 - Worst placement for a $\text{HR}$ bid is $\infty$, as other the market could theoretically increase and stay higher.
 
-- Worst placement for a $\text{CHR}$ bid is finite and deterministic, according the importance $\mathcal{I}$.
+- Worst placement for a $\text{CHR}$ bid is finite and deterministic, according to the importance $\mathcal{I}$.
 
 <br></br>
-## Most open market + liquidity => optimal price
 
-Consider:
-
-- We accomodate any supply of arbitrarily small or large value.
-- We allow any currency, whether those with objective value or any other, i.e. of subjective value.
-- We define currency as an arbitrarily fungible bundle of energy and information
-- We accomodate the entire region of objective value currencies possible (below, at and above the min value).
-- We create the fairest (according to importance) sequence of servicing the demand
-- We allow for infinite types of dynamics incl. traditional markets as special cases, set via simple parameters.
-
-All these superlatives make this market model the most open possible.
-
-Assuming liquidity, this market model thus provides the fairest valuation of any supply.
 
 
 <br></br><br></br>
 # <b>III. Infinite inclusivity</b>
+<br></br>
 
 ## The case
 
@@ -302,10 +291,12 @@ Using a chain of CFS[^inclusiveness], defined below, we can transact arbitrarily
 Hence, every kind and quantity of any supply is supported by this market.
 It is infinitely inclusive.
 
+<br></br>
 ## Smart contracts
 
 Smart contracts are autonomous, decentralized apps. The described market model is implemented as a smart contract for the following reasons: infinite inclusivity, zero credit risk, perfect transparency[^auditabilityisbetter], ability to use any kind of currency.
 
+<br></br>
 ## Fungability
 
 A currency is called fungible if it is available in varying units.
@@ -320,7 +311,8 @@ $$\mathbb{F}(\text{BTC})=10^8$$
 
 $$\mathbb{F}(\text{NFT})=10^0=1$$
 
-### Constant Factor Stablecoin (CFS)
+<br></br>
+## Constant Factor Stablecoin (CFS)
 
 A CFS is a simple, permissionless smart contract that exchanges 1 unit of a currency $\text{ccy}_1$ for $\phi$ units of $\text{ccy}_2$ and vice-versa, as available.
 
@@ -330,23 +322,39 @@ Using a constant factor stablecoin, we can increase the fungability of any curre
 
 A chain of CFS can achieve arbitrary fungability.
 
+<br></br>
 ## Currency
 
 We define a currency as any bundle of energy and information that can be transmitted from one entity to another, incl. bundles containing no energy (only information) xor only energy (no information).
 
 This provides the most generic definition possible.
 
+<br></br>
+<br></br>
+# <b>IV. Conclusion</b>
+<br></br>
+
+## Provably fairest market
+
+Consider:
+
+- We accomodate any supply of arbitrarily small or large value.
+- We allow any currency, whether those with objective value or any other, i.e. of subjective value.
+- We define currency as an arbitrarily fungible bundle of energy and information
+- We accomodate the entire region of objective value currencies possible (below, at and above the min value).
+- We create the fairest (according to importance) sequence of servicing the demand
+- We allow for infinite types of dynamics incl. traditional markets as special cases, set via simple parameters.
+
+All these superlatives make this market model the most open possible.
+
+Assuming liquidity, this market model thus provides the fairest valuation of any supply.
+
+By changing the parameters, minimum $\underline{M}$ and importance $\mathcal{I}$, the seller can run a multi-dim optimisation[^multidimoptimisation] to find the type of market that maximises it's value.
 
 <br></br>
-<br></br>
-# <b>IV. Further work</b>
-<br></br>
-Open API
-We will provide this tech as an open API for any system to use. Anyone that wants to connect any supply to its demand via this provably fairest and most inclusive market model based on smart contracts, will be able to do so easily and focus on creating it's community.
-
-<br></br><br></br><br></br>
-# The widest and most valueble supply is time
-Everyone has time + time is most valuable.
+## Maximum value $\Leftrightarrow$ Supply = Time
+Everyone has time and everyone knows time is most valuable.
+The widest and most valuable supply should run on the provably fairest market model. A v1 implementation is available and a v2 is being built.
 
 As an 1st example application, we have chosen time as the supply. Available @ https://about.2i2i.app
 
@@ -361,7 +369,9 @@ When supply=time, all currencies are per $\Delta T$. Current technology already 
 
 Imagine the entire world harvesting the fairest amount of energy in exchange for the whatever information they can provide. 2i2i could in theory jump start the provably fairest economy ever.
 
-<br></br><br></br>
+
+<br></br>
+<br></br>
 # <b>V.  Notes</b>
 
 [^inclusiveness]: A CFS chain could be constructed to reach arbitrarily small (but positive) or large values.
@@ -396,3 +406,9 @@ $$\text{lurker (LURK)} \Leftrightarrow B \text{ is objective}\land \delta < -\ep
 [^chronyonlyworstcasefinite]: This is a service guarantee for those bidding the minimum (chrony). A highroller is basically participating in an auction for a sooner service, which is only sooner iff $\mathcal{I}_\text{CHR} < \mathcal{I}_\text{HR}$. An subjective bid might never be serviced, as it depends on the seller's subjective value function. A lurker is by definition never serviced.
 
 [^auditabilityisbetter]: Even better than transparency is privacy with auditibility. This allows entities to maintain private information whilst satisfying society that everything is legal.
+
+[^multidimoptimisation]: Based on my own experimentation on highly noisy and highly dimensional optimisation, I have found a multi-start Nelder-Maed to provide the best result. By observing resulting parameter distributions based on diverse starting points, by coincidence, an anomoly of noise presenting as a spike can be confused for a true optimum, which should have many starting points ending in it.
+
+[^implementation]: about.2i2i.app is the v1 version with supply=time. A v2 version is being built.
+
+[^acknowledgement]: The information found in this white paper was obtained with the help of Solli Kim. Thank you Solli for sharing your mind.
