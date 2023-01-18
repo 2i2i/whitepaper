@@ -1,7 +1,7 @@
 # WORK IN PROGRESS
 
 # <b><p align="center">2i2i ~ the fairest market model</p></b>
-#### <p align="center">1m1@2i2i.app[1(https://github.com/2i2i/whitepaper/blob/main/Notes.md#mostinclusive)]</p>
+#### <p align="center">[1m1@2i2i.app(https://github.com/2i2i/whitepaper/blob/main/Notes.md#mostinclusive)]</p>
 
 <br></br>
 ## <p align="center">Abstract</p>
@@ -16,7 +16,7 @@
 
 Assume we have an **seller** with a finite **supply** $\mathcal{S}$ and there exists a **demand** $\mathcal{D}$ consisting of **bid**s.
 
-A **market** $\mathcal{M}$ is a function that determines the next **bid** to be serviced[^alltradeissequential]. Formally,
+A **market** $\mathcal{M}$ is a function that determines the next **bid** to be [serviced(https://github.com/2i2i/whitepaper/blob/main/Notes.md#mostinclusive)]. Formally,
 
 $$\mathcal{M}(\mathcal{S}, \mathcal{D}) = B$$
 
