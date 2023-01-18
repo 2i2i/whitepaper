@@ -2,6 +2,12 @@
 <br></br>
 # <b>V.  Notes</b>
 
+# 1
+## 2
+### 3
+#### 4
+##### 5
+
 [^mostinclusive]: Considering only supplies of positive value, since we can support arbitrarily small or large values, in any type currency, we are most inclusive.
 
 [^fairest]: The fairest value is achieved in the most open market possible based on the assumption that adding an intelligence to a group of intelligences increases the accuracy of the joined valuation of anything.
