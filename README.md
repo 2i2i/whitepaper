@@ -5,7 +5,7 @@
 
 <br></br>
 ## <p align="center">Abstract</p>
-<p align="center">This [whitepaper](https://github.com/2i2i/whitepaper/blob/main/Notes.md#whitepaper) describes a novel, multi-dimensional, infinitely inclusive market model. The described model yields infinite types of new market dynamics and traditional markets as special cases, based on very few parameters. As the market allows any supply of arbitrarily small or large value to be traded in any currency, incl. subjective value currencies, any resulting liquid market must then find the optimal value of the supply, making this the fairest market possible. </p>
+<p align="center">This <a href="https://google.com">a</a> [whitepaper](https://github.com/2i2i/whitepaper/blob/main/Notes.md#whitepaper) describes a novel, multi-dimensional, infinitely inclusive market model. The described model yields infinite types of new market dynamics and traditional markets as special cases, based on very few parameters. As the market allows any supply of arbitrarily small or large value to be traded in any currency, incl. subjective value currencies, any resulting liquid market must then find the optimal value of the supply, making this the fairest market possible. </p>
 <br></br>
 <br></br>
 
