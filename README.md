@@ -291,19 +291,22 @@ Assuming liquidity, this market model thus provides the fairest valuation of any
 
 
 <br></br><br></br>
-# <b>III. Smart contracts</b>
+# <b>III. Infinite inclusivity</b>
 
-Smart contracts are autonomous, decentralized apps. The described market model should be implemented as smart contracts for the following reasons: Zero credit risk, infinite inclusivity, perfect transparency[^auditabilityisbetter], ability to yse any kind of currency.
+## The case
 
-## Zero credit risk
+We can assume that any possible supply $\mathcal{S}$ has positive value, even if miniscule. The old world did not allow the transfer of smaller values than some threshold.
 
-Using smart contracts eliminates credit risk, as the smart contract acts as an autonomous escrow.
+Using a chain of CFS[^inclusiveness], defined below, we can transact arbitrarily small (or large) values.
 
-Bids can be locked in the smart contracts until there is agreement on the a completed trade.
+Hence, every kind and quantity of any supply is supported by this market.
+It is infinitely inclusive.
 
-Each seller could own it's own market place.
+## Smart contracts
 
-## Infinite inclusivity
+Smart contracts are autonomous, decentralized apps. The described market model is implemented as a smart contract for the following reasons: infinite inclusivity, zero credit risk, perfect transparency[^auditabilityisbetter], ability to use any kind of currency.
+
+## Fungability
 
 A currency is called fungible if it is available in varying units.
 
@@ -325,14 +328,7 @@ A CFS never rounds and only makes exact exchanges.
 
 Using a constant factor stablecoin, we can increase the fungability of any currency.
 
-## Inclusiveness
-
-We can assume that any possible supply $\mathcal{S}$ has positive value, even if miniscule. The old financial systems did not allow the transfer of smaller values than ca. 0.01 USD. 
-
-Using a CFS[^inclusiveness], we can transact arbitrarily small (or large) values.
-
-Hence, every kind and quantity of any supply is supported by this market.
-It is infinitely inclusive.
+A chain of CFS can achieve arbitrary fungability.
 
 ## Currency
 
@@ -340,11 +336,6 @@ We define a currency as any bundle of energy and information that can be transmi
 
 This provides the most generic definition possible.
 
-## Implementation
-
-Implementation details would depend on each specific smart contract framework.
-
-The most difficult part is defining what exactly a agreement on the execution of a trade looks like on a smart contract given the blockchain.
 
 <br></br>
 <br></br>
