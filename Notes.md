@@ -34,7 +34,7 @@ These are not real 'assumptions'. These prerequisites that we are asking for are
 Energy and information as defined by the Sciences, as two fundamental elements of nature.
 
 ## min value
-Every seller has the right to define it's own minimum value for a trade
+Every seller has the right to define it's own minimum value for a trade.
 
 ## all markets
 This can be made a formal statement thanks to us defining **currency** as generally as possible.

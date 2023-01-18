@@ -1,7 +1,7 @@
 # WORK IN PROGRESS
 
 # <b><p align="center">2i2i ~ the fairest market model</p></b>
-#### <p align="center">[1m1@2i2i.app](https://github.com/2i2i/whitepaper/blob/main/Notes.md#mostinclusive)</p>
+#### <p align="center">[1m1@2i2i.app](https://github.com/2i2i/whitepaper/blob/main/Notes.md#acknowledgement)</p>
 
 <br></br>
 ## <p align="center">Abstract</p>
@@ -18,7 +18,7 @@
 
 Assume we have a **seller** with a finite **supply** $\mathcal{S}$ and there exists a **demand** $\mathcal{D}$ consisting of **bid**s.
 
-A **market** $\mathcal{M}$ is a function that determines the next **bid** to be [serviced](https://github.com/2i2i/whitepaper/blob/main/Notes.md#mostinclusive). Formally,
+A **market** $\mathcal{M}$ is a function that determines the next **bid** to be [serviced](https://github.com/2i2i/whitepaper/blob/main/Notes.md#all-trade-is-sequential). Formally,
 
 $$\mathcal{M}(\mathcal{S}, \mathcal{D}) = B$$
 
@@ -37,7 +37,7 @@ This then allows for an **ordering** of the **bid**s.
 
 $$\mathcal{D} = [B_1, \ldots, B_N]$$
 
-In this paper, we will define a partial **ordering** and a total **ordering** that is **fairest[^fairest]**, most **inclusive[^mostinclusive]** and accomodates all[^allmarkets] types of **market**s, as well as innovating new types of **market**s with a generic framework.
+In this paper, we will define a partial **ordering** and a total **ordering** that is **[fairest](https://github.com/2i2i/whitepaper/blob/main/Notes.md#fairest)**, most **[inclusive](https://github.com/2i2i/whitepaper/blob/main/Notes.md#most-inclusive)** and accomodates [all](https://github.com/2i2i/whitepaper/blob/main/Notes.md#all-markets) types of **market**s, as well as innovating new types of **market**s with a generic framework.
 
 <br></br>
 ## Parameters
@@ -46,7 +46,7 @@ The **seller** sets the following **parameters** $\mathcal{P}$:
 
 $$\mathcal{P} = (\underline{M}, \mathcal{I})$$
 
-$$\underline{M} \ge 0 \text{ minimum value that a bid needs to have}$$
+$$\underline{M} \ge 0 \text{ [minimum](https://github.com/2i2i/whitepaper/blob/main/Notes.md#min-value) value that a bid needs to have}$$
 
 $$\mathcal{I} = \text{importance}$$
 
@@ -70,7 +70,7 @@ The **amount** $A$ contains a quantity $q$, a **currency** $\text{ccy}$ and an e
 <br></br>
 ## Currency and FX
 
-A **currency** $\text{ccy}$ is defined as a bundle of energy and information[^energyandinfo]. Let $\mathcal{C}$ be the universe of all existing currencies.
+A **currency** $\text{ccy}$ is defined as a bundle of [energy and information](https://github.com/2i2i/whitepaper/blob/main/Notes.md#energy-and-info). Let $\mathcal{C}$ be the universe of all existing currencies.
 
 Then
 
@@ -106,12 +106,12 @@ The **amount** $A$ of each **objective** **bid** can be transformed into the cho
 
 $$B(T, A = (q, \text{ccy}, \text{FX}), \mathcal{P}) \rightarrow B_\text{base}(T, A = (\text{FX}\cdot q , \text{ccy}_\text{base}, \text{FX}\equiv 1), \mathcal{P})$$
 
-This means, without loss of generality, we can assume[^assuming] all **objective bids** to be denominated in the **base currency**.
+This means, without loss of generality, we can [assume](https://github.com/2i2i/whitepaper/blob/main/Notes.md#assuming) all **objective bids** to be denominated in the **base currency**.
 
 <br></br>
 ## **Bid** Categories
 
-Assuming[^assuming] that the **min** value $\underline{M}$ is also in the **base currency**, we define[^practicalchrony] the following 4 **bid** categories:
+[Assuming](https://github.com/2i2i/whitepaper/blob/main/Notes.md#assuming) that the **min** value $\underline{M}$ is also in the **base currency**, we [define](https://github.com/2i2i/whitepaper/blob/main/Notes.md#practical-chrony) the following 4 **bid** categories:
 
 $$\text{chrony (CHR)} \Leftrightarrow B \text{ is objective}\land q = \underline{M}$$
 
@@ -138,7 +138,7 @@ the market is activated
 
 $$0 < \sum_\square\mathcal{I}_\square = \sum\mathcal{I}$$
 
-and the lurkers[^whylurkers] never get serviced
+and the [lurkers](https://github.com/2i2i/whitepaper/blob/main/Notes.md#why-lurkers) never get serviced
 
 $$\mathcal{I}_\text{LURK} = 0$$
 
@@ -166,7 +166,7 @@ We want to create a **market** function such that:
 
 - **highroller bid**s are **serviced** in order of value
 
-- worst case placement for **chrony bids** are finite and deterministic[^chronyonlyworstcasefinite]
+- worst case placement for **chrony bids** are [finite and deterministic](https://github.com/2i2i/whitepaper/blob/main/Notes.md#chrony-only-worst-case-finite)
 
 - the **seller** can use it's own subjective value function to value **subjective bid**s
 
@@ -236,7 +236,7 @@ $$\mathcal{I} = \begin{pmatrix} \nu_\text{CHR} \\ \nu_\text{HR} \end{pmatrix}$$
 
 Given the previous max $\sum\mathcal{I}-1$ number of bids $[B_n,\ldots,B_m]$ with $0\le m-n<\sum\mathcal{I}-1$, we want to choose the next bid $B_\text{next}$.
 
-First, we choose the next bid category as the category that brings our realized importance closer($\Delta$[^distance]) to the target importance as set by the seller.
+First, we choose the next bid category as the category that brings our realized importance [closer](https://github.com/2i2i/whitepaper/blob/main/Notes.md#distance) to the target importance as set by the seller.
 
 Calculate the realized importance $\hat{\mathcal{I}}$ including an assumed next bid category $\text{BC}(B_\text{next})$:
 
@@ -256,10 +256,10 @@ If the next category should be $\text{SUBJ}$, then $B_\text{next}$ can be chosen
 
 1. Let the seller choose one xor none from all the existing $\text{SUBJ}$ bids. This gives a partial ordering of the bids.
 
-A discussion of the choices is found here: [^fullsubjchoiceisbetter].
+A discussion of the choices is found [here](https://github.com/2i2i/whitepaper/blob/main/Notes.md#full-subj-choice-is-better).
 
 
-Note the next category can never be $\text{LURK}$, as $\nu_\text{LURK}=0$. The seller can convert $\text{LURK}$ bids into $\text{CHR}$ or $\text{HR}$ bids by changing the parameters[^whylurkers].
+Note the next category can never be $\text{LURK}$, as $\nu_\text{LURK}=0$. The seller can convert $\text{LURK}$ bids into $\text{CHR}$ or $\text{HR}$ bids by changing the parameters. [Why lurkers?](https://github.com/2i2i/whitepaper/blob/main/Notes.md#why-lurkers)
 
 <br></br>
 ## Worst placement is "deterministic"
@@ -296,7 +296,7 @@ Hence, every kind and quantity of any supply is supported by this market.
 <br></br>
 ## Smart contracts
 
-Smart contracts are autonomous, decentralized apps. The described market model is implemented as a smart contract for the following reasons: infinite inclusivity, zero credit risk, perfect transparency[^auditabilityisbetter], ability to use any kind of currency.
+Smart contracts are autonomous, decentralized apps. The described market model is implemented as a smart contract for the following reasons: infinite inclusivity, zero credit risk, perfect [transparency](https://github.com/2i2i/whitepaper/blob/main/Notes.md#auditability-is-better), ability to use any kind of currency.
 
 <br></br>
 ## Fungability
@@ -320,7 +320,7 @@ A CFS is a simple, permissionless smart contract that exchanges 1 unit of a curr
 
 A CFS never rounds and only makes exact exchanges.
 
-Using a constant factor stablecoin, we can increase the fungability of any currency.
+Using a constant factor stablecoin, we can increase the fungability of [any](https://github.com/2i2i/whitepaper/blob/main/Notes.md#fungable-nfts) currency.
 
 A chain of CFS can achieve arbitrary fungability.
 
@@ -351,7 +351,7 @@ All these superlatives make this market model the most open possible.
 
 Assuming liquidity, this market model thus provides the fairest valuation of any supply.
 
-By changing the parameters, minimum $\underline{M}$ and importance $\mathcal{I}$, the seller can run a multi-dim optimisation[^multidimoptimisation] to find the type of market that maximises it's value.
+By changing the parameters, minimum $\underline{M}$ and importance $\mathcal{I}$, the seller can run a [multi-dim optimisation](https://github.com/2i2i/whitepaper/blob/main/Notes.md#multidim-optimisation) to find the type of market that maximises it's value.
 
 <br></br>
 ## Maximum value $\Leftrightarrow$ Supply = Time
@@ -370,49 +370,3 @@ In a futuristic society, people could replace appointments with such a market fo
 When supply=time, all currencies are per $\Delta T$. Current technology already allows $\Delta T \le 1 \text{ sec}$.
 
 Imagine the entire world harvesting the fairest amount of energy in exchange for the whatever information they can provide. 2i2i could in theory jump start the provably fairest economy ever.
-
-
-<br></br>
-<br></br>
-# <b>V.  Notes</b>
-
-[^mostinclusive]: Considering only supplies of positive value, since we can support arbitrarily small or large values, in any type currency, we are most inclusive.
-
-[^fairest]: The fairest value is achieved in the most open market possible based on the assumption that adding an intelligence to a group of intelligences increases the accuracy of the joined valuation of anything.
-
-[^fungeNFTs]: Even an NFT could in this manner be broken into smaller pieces. Having art with higher fungability increases the size of the demand, however it also seems to decrease the perceived value by many.
-
-[^fullsubjchoiceisbetter]: todo
-
-[^distance]: We can choose any 2-dim distance measure, e.g. the Euclidean metric.
-
-[^practicalchrony]: For practical reasons, such as real time FX changes, it can make sense to define the categories with a precision $\epsilon>0$, and the relative distance $\delta=\ln{\frac{q}{\underline{M}}}$ as follows
-
-    $$\text{chrony (CHR)} \Leftrightarrow B \text{ is objective}\land |\delta| \le \epsilon$$
-
-    $$\text{highroller (HR)} \Leftrightarrow B \text{ is objective}\land \delta > \epsilon$$
-
-    $$\text{lurker (LURK)} \Leftrightarrow B \text{ is objective}\land \delta < -\epsilon$$
-
-
-[^whylurkers]: Lurkers complete the picture of the demand. They allow the seller to realise the optimal minimum price. Traditional markets leave sellers blind to this entire bottom part of the demand.
-
-[^assuming]: These are not real 'assumptions'. These prerequisites that we are asking for are trivial and hence we are "assuming" them to be true already. Real 'assumptions' can be wrong.
-
-[^energyandinfo]: Energy and information as defined by the Sciences, as two fundamental elements of nature.
-
-[^minvalue]: Every seller has the right to define it's own minimum value for a trade
-
-[^allmarkets]: This can be made a formal statement thanks to us defining **currency** as generally as possible.
-
-[^alltradeissequential]: Having a finite supply requires ordering of demand. All selling of any supply is approximately sequential. Even selling digital copies of a product that seems unlimited, is in fact limited due to network bandwidth being limited and servers usually order demand on a "first-come, first-serve" basis. When supply is very large vs demand, then modeling a simultaneous trading sequentially, is not any loss at all, as the sequence can simply move very fast, giving the illution of simultaneouity.
-
-[^chronyonlyworstcasefinite]: This is a service guarantee for those bidding the minimum (chrony). A highroller is basically participating in an auction for a sooner service, which is only sooner iff $\mathcal{I}_\text{CHR} < \mathcal{I}_\text{HR}$. An subjective bid might never be serviced, as it depends on the seller's subjective value function. A lurker is by definition never serviced.
-
-[^auditabilityisbetter]: Even better than transparency is privacy with auditibility. This allows entities to maintain private information whilst satisfying society that everything is legal.
-
-[^multidimoptimisation]: Based on my own experimentation on highly noisy and highly dimensional optimisation, I have found a multi-start Nelder-Maed to provide the best result. By observing resulting parameter distributions based on diverse starting points, by coincidence, an anomoly of noise presenting as a spike can be confused for a true optimum, which should have many starting points ending in it.
-
-[^implementation]: about.2i2i.app is the v1 version with supply=time. A v2 version is being built.
-
-[^acknowledgement]: The information found in this white paper was created by 1m1 with the help of Solli Kim. Thank you Solli for sharing your mind.
