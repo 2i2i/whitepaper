@@ -271,21 +271,19 @@ A discussion of the choices is found [here](https://github.com/2i2i/whitepaper/b
 Note the next **category** can never be $\text{LURK}$, as $\nu_\text{LURK}=0$. The **seller** can convert $\text{LURK}$ **bid**s into $\text{CHR}$ or $\text{HR}$ **bid**s by changing the **parameters**.
 
 <br></br>
-## Worst placement is "deterministic"
+## Worst case **rank** is deterministic
 
-**Rank** is defined as the number of times the market function M has to be called on B_
-
-Any **bid** can always choose to cancel, thereby improving the placement of all **bid**s behind it. Hence we only need to talk about the worst case.
+Any **bid** can always choose to cancel, thereby improving the **rank** of all **bid**s behind it. Hence we only need to talk about the worst case.
 
 *After* the creation of a **bid** $B$, we can simulate, as a mind experiment, the arrival of infinite many **bid**s of all categories possible:
 
-- Worst and best placement for a $\text{LURK}$ bid is $\infty$.
+- Worst and best case **rank** for a $\text{LURK}$ bid is $\infty$.
 
-- Worst placement for a $\text{SUBJ}$ bid is $\infty$, the seller uses it's own subjective value function.
+- Worst case **rank** for a $\text{SUBJ}$ bid is $\infty$, the seller uses it's own subjective value function.
 
-- Worst placement for a $\text{HR}$ bid is $\infty$, as other the market could theoretically increase and stay higher.
+- Worst case **rank** for a $\text{HR}$ bid is $\infty$, as other the market could theoretically increase and stay higher.
 
-- Worst placement for a $\text{CHR}$ bid is finite and deterministic, according to the importance $\mathcal{I}$.
+- Worst case **rank** for a $\text{CHR}$ bid is finite and deterministic, according to the importance $\mathcal{I}$.
 
 <br></br>
 
@@ -301,8 +299,8 @@ We can assume that any possible supply $\mathcal{S}$ has positive value, even if
 
 Using a chain of CFS, defined below, we can transact arbitrarily small (or large) values.
 
-Hence, every kind and quantity of any supply is supported by this market.
-**It is infinitely inclusive.**
+Hence, every kind and quantity of any supply is supported.
+The market model is **infinitely inclusive**.
 
 <br></br>
 ## Smart contracts
@@ -334,13 +332,6 @@ A CFS never rounds and only makes exact exchanges.
 Using a constant factor stablecoin, we can increase the fungability of [any](https://github.com/2i2i/whitepaper/blob/main/Notes.md#fungable-nfts) currency.
 
 A chain of CFS can achieve arbitrary fungability.
-
-<br></br>
-## Currency
-
-We define a currency as any bundle of energy and information that can be transmitted from one entity to another, incl. bundles containing no energy (only information) xor only energy (no information).
-
-This provides the most generic definition possible.
 
 <br></br>
 <br></br>

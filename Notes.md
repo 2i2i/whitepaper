@@ -75,6 +75,11 @@ about.2i2i.app is the v1 version with supply=time. A fullv2 version for any supp
 ## objective vs subjective value
 Any currency can be said to have objective value if there exists a liquid market to exchange at least the base unit of this currency into another objective value currency. We assume that a community can agree on at least one currency that is declared objective.
 
+<br></br>
+## currency
+We define a currency as any bundle of energy and information that can be transmitted from one entity to another, incl. bundles containing no energy (only information) xor only energy (no information).
+
+This provides the most generic definition possible.
 
 <br></br>
 ## whitepaper
