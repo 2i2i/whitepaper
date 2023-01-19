@@ -79,7 +79,7 @@ $$\mathcal{M}^\text{rank}(\empty) = B$$
 <br></br>
 ## Currency and FX
 
-A **currency** $\text{ccy}$ is defined as a bundle of [energy and information](https://github.com/2i2i/whitepaper/blob/main/Notes.md#energy-and-info). Let $\mathcal{C}$ be the universe of all existing currencies.
+A [**currency**](https://github.com/2i2i/whitepaper/blob/main/Notes.md#currency) $\text{ccy}$ is defined as a bundle of [energy and information](https://github.com/2i2i/whitepaper/blob/main/Notes.md#energy-and-info). Let $\mathcal{C}$ be the universe of all existing currencies.
 
 Then
 
