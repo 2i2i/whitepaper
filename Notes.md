@@ -72,20 +72,8 @@ Based on my own intensive research on highly noisy and highly dimensional optimi
 about.2i2i.app is the v1 version with supply=time. A fullv2 version for any supply and fully web3 will be built.
 
 <br></br>
-## $\empty$
-$\empty$ is an arbitrary special symbol to help define the first and last bids. 
-
-$$B, B' \in \mathcal{D} \cup \\\{∅\\\}$$
-
- can be read as "$B$ and $B'$ are bids from the demand $\mathcal{D}$ or denote an/either end", via
-
- $$\mathcal{M}(\empty)=\text{first bid}$$
- $$\mathcal{M}(\text{last bid})=\empty$$
-
- $$\href{https://a.b}{a}$$
-
- $$text{Math} + \href{https://www.mathjax.org}{\text{MathJax}} = \text{Fun!}$$
-
+## objective vs subjective value
+Any currency can be said to have objective value if there exists a liquid market to exchange at least the base unit of this currency into another objective value currency. We assume that a community can agree on at least one currency that is declared objective.
 
 
 <br></br>

@@ -30,13 +30,17 @@ $$\mathcal{M}(\mathcal{S}, \mathcal{D}, B) = B_\text{next}$$
 
 $$B, B' \in \mathcal{D} \cup \\\{∅\\\}$$
 
-$\mathcal{M}(\mathcal{S}, \mathcal{D}, ∅)$ gives the *first* **bid** to be **serviced** and $\mathcal{M}(\mathcal{S}, \mathcal{D}, B) = ∅$ means $B$ is the *last* **bid** to be **serviced**.
+$\empty$ represents an end, as follows. Simplifying $\mathcal{M}(\mathcal{S}, \mathcal{D}, B)$ to $\mathcal{M}(B)$.
 
-This then allows for an **ordering** of the **bid**s.
+$$\mathcal{M}(\empty)=B_\text{first}$$
+ $$\mathcal{M}(B_\text{last})=\empty$$
 
-$$\mathcal{D} = [B_1, \ldots, B_N]$$
 
-In this paper, we will define a partial **ordering** and a total **ordering** that is **[fairest](https://github.com/2i2i/whitepaper/blob/main/Notes.md#fairest)**, most **[inclusive](https://github.com/2i2i/whitepaper/blob/main/Notes.md#most-inclusive)** and accomodates [all](https://github.com/2i2i/whitepaper/blob/main/Notes.md#all-markets) types of **market**s, as well as innovating new types of **market**s with a generic framework.
+This then allows for an ordering of the **bid**s
+
+$$\mathcal{D} = [\mathcal{M}^1(\empty), \mathcal{M}^2(\empty), \ldots, \mathcal{M}^N(\empty)] = [B_1, \ldots, B_N]$$
+
+In this paper, we will define a partial ordering and a total ordering that is **[fairest](https://github.com/2i2i/whitepaper/blob/main/Notes.md#fairest)**, most **[inclusive](https://github.com/2i2i/whitepaper/blob/main/Notes.md#most-inclusive)** and accomodates [all](https://github.com/2i2i/whitepaper/blob/main/Notes.md#all-markets) types of **market**s, as well as innovating new types of **market**s with a generic framework.
 
 <br></br>
 ## Parameters
@@ -45,7 +49,7 @@ The **seller** sets the following **parameters** $\mathcal{P}$:
 
 $$\mathcal{P} = (\underline{M}, \mathcal{I})$$
 
-$$\underline{M} \ge 0 \text{ [minimum](https://github.com/2i2i/whitepaper/blob/main/Notes.md#min-value) value that a bid needs to have}$$
+$$\underline{M} \ge 0 \text{ minimum value that a bid needs to have}$$
 
 $$\mathcal{I} = \text{importance}$$
 
@@ -81,7 +85,7 @@ Then
 
 $$\mathcal{C} = \mathcal{C}_\text{obj} \text{  } \dot{\cup} \text{  } \mathcal{C}_\text{sub}$$
 
-that is, any **currency** either has objective value xor subjective value.
+that is, any **currency** either has [objective value xor subjective value]().
 
 We choose some
 
