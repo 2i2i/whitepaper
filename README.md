@@ -33,7 +33,7 @@ $$B, B' \in \mathcal{D} \cup \\\{∅\\\}$$
 $∅$ represents an end, as follows. Simplifying $\mathcal{M}(\mathcal{S}, \mathcal{D}, B)$ to $\mathcal{M}(B)$.
 
 $$\mathcal{M}(∅)=B_\text{first}$$
-$$\mathcal{M}(∅)=B_\text{first}$$
+
 $$\mathcal{M}(B_\text{last})=∅$$
 
 
