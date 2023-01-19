@@ -5,8 +5,7 @@
 
 <br></br>
 ## <p align="center">Abstract</p>
-<p align="center">This <a href="https://github.com/2i2i/whitepaper/blob/main/Notes.md#whitepaper">whitepaper</a> describes a novel, multi-dimensional, infinitely inclusive market model. The described model yields infinite types of new market dynamics and traditional markets as special cases, based on very few parameters. As the market allows any supply of arbitrarily small or large value to be traded in any currency, incl. subjective value currencies, any resulting liquid market must then find the optimal value of the supply, making this the fairest market possible. </p>
-<br></br>
+<p align="center">This <a href="https://github.com/2i2i/whitepaper/blob/main/Notes.md#whitepaper">whitepaper</a> describes a novel, multi-dimensional, infinitely inclusive market model. The described model yields infinite types of new market dynamics and traditional markets as special cases, based on very few parameters. As the market allows any supply of arbitrarily small or large value to be traded in any currency, incl. subjective value currencies, any resulting liquid market must then find the optimal value of the supply, making this the fairest market model possible. </p>
 <br></br>
 
 # <b>I. Definitions</b>
@@ -68,6 +67,12 @@ $$\mathcal{P} = \text{ the sellers parameters } T$$
 The **amount** $A$ contains a quantity $q$, a **currency** $\text{ccy}$ and an exchange rate to a **base currency** $\text{FX}$, all fixed at time $T$.
 
 <br></br>
+## Rank
+The **rank** of a **bid** $B$ is defined as the number of times a next has to be chosen to arrive at $B$
+
+$$\mathcal{M}^\text{rank}(\empty) = B$$
+
+<br></br>
 ## Currency and FX
 
 A **currency** $\text{ccy}$ is defined as a bundle of [energy and information](https://github.com/2i2i/whitepaper/blob/main/Notes.md#energy-and-info). Let $\mathcal{C}$ be the universe of all existing currencies.
@@ -121,16 +126,16 @@ $$\text{lurker (LURK)} \Leftrightarrow B \text{ is objective}\land q < \underlin
 
 $$\text{subjective (SUBJ)} \Leftrightarrow B \text{ is subjective}$$
 
-We can denote a **bid** $B$'s category as $\text{BC}(B)$.
+We can denote a **bid** $B$'s **category** as $\text{BC}(B)$.
 
 <br></br>
 ## **Importance**
 
-The **seller** defines the importance per bid category
+The **seller** defines the **importance** per **bid** **category**
 
 $$\mathcal{I} = (\mathcal{I}_\text{CHR}, \mathcal{I}_\text{HR}, \mathcal{I}_\text{LURK}, \mathcal{I}_\text{SUBJ})$$
 
-where each importace is a natural number
+where each **importace** is a natural number
 
 $$\mathcal{I}_\square\in\mathbb{N}_{\ge 0}, \square\in\\\{\text{CHR}, \text{HR}, \text{LURK}, \text{SUBJ}\\\}$$
 
@@ -138,18 +143,18 @@ the market is activated
 
 $$0 < \sum_\square\mathcal{I}_\square = \sum\mathcal{I}$$
 
-and the [lurkers](https://github.com/2i2i/whitepaper/blob/main/Notes.md#why-lurkers) never get serviced
+and the **[lurkers](https://github.com/2i2i/whitepaper/blob/main/Notes.md#why-lurkers)** never get serviced
 
 $$\mathcal{I}_\text{LURK} = 0$$
 
 
-Amongst every subsequence of the ordered bids $[B_n, \ldots, B_m]$ of length $\sum\mathcal{I}$, on average, we get $\mathcal{I}_\square$ many of bid category $\square$.
+Amongst every subsequence of the ordered **bid**s $[B_n, \ldots, B_m]$ of length $\sum\mathcal{I}$, on average, we get $\mathcal{I}_\square$ many of **bid** **category** $\square$.
 
 E.g. if
 
 $$\mathcal{I} = (\mathcal{I}_\text{CHR} = 2, \mathcal{I}_\text{HR} = 3, \mathcal{I}_\text{LURK} = 0, \mathcal{I}_\text{SUBJ} = 0)$$
 
-then, on average, any subsequence of bids serviced should contain 2 chrony and 3 highroller bids.
+then, on average, any subsequence of **bid**s **serviced** should contain 2 **chrony** and 3 **highroller** **bid**s.
 
 <br></br>
 <br></br>
@@ -194,26 +199,26 @@ $$\mathcal{I} = (\mathcal{I}_\text{CHR} = 0, \mathcal{I}_\text{HR} = 0, \mathcal
 <br></br>
 ## The algorithm
 <br></br>
-### 1. Sort the bids
+### 1. Sort the **bid**s
 
 We can almost surely assume
 
 $$T_i \ne T_j \text{ if } i \ne j$$
 
-that the bids can be sorted chronologically.
+that the **bid**s can be sorted chronologically.
 
-Given this chronological ordering, let's group the bids by creating subsequences of constant parameters:
+Given this chronological ordering, let's group the **bid**s by creating subsequences of constant **parameters**:
 
 $$\underbrace{B_1, \ldots, B_{i_1}}_{\mathcal{P}_1}, \underbrace{B_{i_1+1}, \ldots, B_{i_2}}_{\mathcal{P}_2}, \ldots, \underbrace{B_{i_{G_N}+1}, \ldots, B_N}_{\mathcal{P}_{G_N}}$$
 
-that is, changing the parameters $\mathcal{P}$ fixes the current order.
+that is, changing the **parameters** $\mathcal{P}$ fixes the current order.
 
-We are left with the task of ordering the bids given constant parameters $\mathcal{P}$.
+We are left with the task of ordering the **bid**s given constant **parameters** $\mathcal{P}$.
 
 <br></br>
 ### 2. Decimal Importance
 
-The importance $\mathcal{I}$ can be converted into decimals as follows:
+The **importance** $\mathcal{I}$ can be converted into decimals as follows:
 
 $$\mathcal{I}\rightarrow\nu_\square = \frac{\mathcal{I}_\square}{\sum\mathcal{I}} \in [0;1]$$
 
@@ -234,11 +239,11 @@ $$\mathcal{I} = \begin{pmatrix} \nu_\text{CHR} \\ \nu_\text{HR} \end{pmatrix}$$
 <br></br>
 ### 3. Define $\mathcal{M}$
 
-Given the previous max $\sum\mathcal{I}-1$ number of bids $[B_n,\ldots,B_m]$ with $0\le m-n<\sum\mathcal{I}-1$, we want to choose the next bid $B_\text{next}$.
+Given the previous max $\sum\mathcal{I}-1$ number of bids $[B_n,\ldots,B_m]$, we want to choose the next **bid** $B_\text{next}$.
 
-First, we choose the next bid category as the category that brings our realized importance [closer](https://github.com/2i2i/whitepaper/blob/main/Notes.md#distance) to the target importance as set by the seller.
+First, we choose the next **bid** **category** as the **category** that brings our realized **importance** [closest](https://github.com/2i2i/whitepaper/blob/main/Notes.md#distance) ($\Delta$) to the target **importance** as set by the seller.
 
-Calculate the realized importance $\hat{\mathcal{I}}$ including an assumed next bid category $\text{BC}(B_\text{next})$:
+Calculate the realized **importance** $\hat{\mathcal{I}}$ including an assumed next **bid** **category** $\text{BC}(B_\text{next})$:
 
 $$\hat{\mathcal{I}}=\begin{pmatrix} \hat{\nu}_\text{CHR} \\ \hat{\nu}_\text{HR} \end{pmatrix}$$
 
@@ -246,27 +251,29 @@ $$\hat{\nu}_\square = \frac{\\\#\\\{\text{BC}(B_i)==\square\\\}_{i=n\ldots m+1}}
 
 $$\text{BC}(B_\text{next})=\underset{\text{BC}(B_\text{next})}{\text{argmin }}\Delta(\mathcal{I}, \hat{\mathcal{I}})$$
 
-If the next category should be $\text{CHR}$, then $B_\text{next}$ is the chronogically next $\text{CHR}$ bid available.
+If the next **category** should be $\text{CHR}$, then $B_\text{next}$ is the chronogically next $\text{CHR}$ **bid** available.
 
-If the next category should be $\text{HR}$, then $B_\text{next}$ is the value ordered next $\text{HR}$ bid available.
+If the next **category** should be $\text{HR}$, then $B_\text{next}$ is the value ordered next $\text{HR}$ **bid** available.
 
-If the next category should be $\text{SUBJ}$, then $B_\text{next}$ can be chosen in the two following ways:
+If the next **category** should be $\text{SUBJ}$, then $B_\text{next}$ can be chosen in the two following ways:
 
-1. $B_\text{next}$ is the chronogically next $\text{SUBJ}$ bid available. However, the seller can choose to decline the bid, using it's subjective value function.
+1. $B_\text{next}$ is the chronogically next $\text{SUBJ}$ **bid** available. However, the **seller** can choose to decline the **bid**, using it's subjective value function. This gives a total ordering of the **bid**s.
 
-1. Let the seller choose one xor none from all the existing $\text{SUBJ}$ bids. This gives a partial ordering of the bids.
+1. Let the **seller** choose one xor none from all the existing $\text{SUBJ}$ **bid**s. This gives a partial ordering of the **bid**s.
 
 A discussion of the choices is found [here](https://github.com/2i2i/whitepaper/blob/main/Notes.md#full-subj-choice-is-better).
 
 
-Note the next category can never be $\text{LURK}$, as $\nu_\text{LURK}=0$. The seller can convert $\text{LURK}$ bids into $\text{CHR}$ or $\text{HR}$ bids by changing the parameters. [Why lurkers?](https://github.com/2i2i/whitepaper/blob/main/Notes.md#why-lurkers)
+Note the next **category** can never be $\text{LURK}$, as $\nu_\text{LURK}=0$. The **seller** can convert $\text{LURK}$ **bid**s into $\text{CHR}$ or $\text{HR}$ **bid**s by changing the **parameters**.
 
 <br></br>
 ## Worst placement is "deterministic"
 
-Any bid can always choose to cancel, thereby improving the placement of all bids behind it. Hence we only need to talk about the worst case.
+**Rank** is defined as the number of times the market function M has to be called on B_
 
-**After** the creation of a bid $B$, we can simulate, as a mind experiment, the arrival of infinite many bids of all categories possible:
+Any **bid** can always choose to cancel, thereby improving the placement of all **bid**s behind it. Hence we only need to talk about the worst case.
+
+*After* the creation of a **bid** $B$, we can simulate, as a mind experiment, the arrival of infinite many **bid**s of all categories possible:
 
 - Worst and best placement for a $\text{LURK}$ bid is $\infty$.
 
