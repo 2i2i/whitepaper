@@ -30,15 +30,15 @@ $$\mathcal{M}(\mathcal{S}, \mathcal{D}, B) = B_\text{next}$$
 
 $$B, B' \in \mathcal{D} \cup \\\{∅\\\}$$
 
-$\empty$ represents an end, as follows. Simplifying $\mathcal{M}(\mathcal{S}, \mathcal{D}, B)$ to $\mathcal{M}(B)$.
+$∅$ represents an end, as follows. Simplifying $\mathcal{M}(\mathcal{S}, \mathcal{D}, B)$ to $\mathcal{M}(B)$.
 
-$$\mathcal{M}(\empty)=B_\text{first}$$
- $$\mathcal{M}(B_\text{last})=\empty$$
+$$\mathcal{M}(∅)=B_\text{first}$$
+ $$\mathcal{M}(B_\text{last})=∅$$
 
 
 This then allows for an ordering of the **bid**s
 
-$$\mathcal{D} = [\mathcal{M}^1(\empty), \mathcal{M}^2(\empty), \ldots, \mathcal{M}^N(\empty)] = [B_1, \ldots, B_N]$$
+$$\mathcal{D} = [\mathcal{M}^1(∅), \mathcal{M}^2(∅), \ldots, \mathcal{M}^N(∅)] = [B_1, \ldots, B_N]$$
 
 In this paper, we will define a partial ordering and a total ordering that is **[fairest](https://github.com/2i2i/whitepaper/blob/main/Notes.md#fairest)**, most **[inclusive](https://github.com/2i2i/whitepaper/blob/main/Notes.md#most-inclusive)** and accomodates [all](https://github.com/2i2i/whitepaper/blob/main/Notes.md#all-markets) types of **market**s, as well as innovating new types of **market**s with a generic framework.
 
@@ -74,7 +74,7 @@ The **amount** $A$ contains a quantity $q$, a **currency** $\text{ccy}$ and an e
 ## Rank
 The **rank** of a **bid** $B$ is defined as the number of times a next has to be chosen to arrive at $B$
 
-$$\mathcal{M}^\text{rank}(\empty) = B$$
+$$\mathcal{M}^\text{rank}(∅) = B$$
 
 <br></br>
 ## Currency and FX
