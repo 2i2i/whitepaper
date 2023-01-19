@@ -176,7 +176,7 @@ We want to create a **market** function such that:
 
 - **highroller bid**s are **serviced** in order of value
 
-- worst case placement for **chrony bids** are [finite and deterministic](https://github.com/2i2i/whitepaper/blob/main/Notes.md#chrony-only-worst-case-finite)
+- worst case **rank** for **chrony bids** are [finite and deterministic](https://github.com/2i2i/whitepaper/blob/main/Notes.md#chrony-only-worst-case-finite)
 
 - the **seller** can use it's own subjective value function to value **subjective bid**s
 
@@ -296,24 +296,24 @@ Any **bid** can always choose to cancel, thereby improving the **rank** of all *
 
 ## The case
 
-We can assume that any possible supply $\mathcal{S}$ has positive value, even if miniscule. The old world did not allow the transfer of smaller values than some threshold.
+We can assume that any possible **supply** $\mathcal{S}$ has positive value, even if miniscule. The old world did not allow the transfer of smaller values than some threshold.
 
-Using a chain of CFS, defined below, we can transact arbitrarily small (or large) values.
+Using a chain of **CFS**, defined below, we can transact arbitrarily small (or large) values.
 
-Hence, every kind and quantity of any supply is supported.
-The market model is **infinitely inclusive**.
+Hence, every kind and quantity of any **supply** is supported.
+This market model is **infinitely inclusive**.
 
 <br></br>
 ## Smart contracts
 
-Smart contracts are autonomous, decentralized apps. The described market model is implemented as a smart contract for the following reasons: infinite inclusivity, zero credit risk, perfect [transparency](https://github.com/2i2i/whitepaper/blob/main/Notes.md#auditability-is-better), ability to use any kind of currency.
+Smart contracts are autonomous, decentralized apps. The described market model is implemented as a smart contract for the following reasons: **infinite inclusivity**, zero credit risk, perfect [transparency](https://github.com/2i2i/whitepaper/blob/main/Notes.md#auditability-is-better), ability to use any kind of **currency**.
 
 <br></br>
-## Fungability
+## **Fungability**
 
-A currency is called fungible if it is available in varying units.
+A **currency** is called **fungible** if it is available in varying units.
 
-We can define the fungability $\mathbb{F}$ of a currency as the ratio of a base unit to the minimal unit.
+We can define the **fungability** $\mathbb{F}$ of a **currency** as the ratio of a base unit to the minimal unit.
 
 E.g. 
 
@@ -324,15 +324,15 @@ $$\mathbb{F}(\text{BTC})=10^8$$
 $$\mathbb{F}(\text{NFT})=10^0=1$$
 
 <br></br>
-## Constant Factor Stablecoin (CFS)
+## Constant Factor Stablecoin (**CFS**)
 
-A CFS is a simple, permissionless smart contract that exchanges 1 unit of a currency $\text{ccy}_1$ for $\phi$ units of $\text{ccy}_2$ and vice-versa, as available.
+A **CFS** is a simple, permissionless smart contract that exchanges 1 unit of a **currency** $\text{ccy}_1$ for $\phi$ units of $\text{ccy}_2$ and vice-versa, as available.
 
-A CFS never rounds and only makes exact exchanges.
+A **CFS** never rounds and only makes exact exchanges.
 
-Using a constant factor stablecoin, we can increase the fungability of [any](https://github.com/2i2i/whitepaper/blob/main/Notes.md#fungable-nfts) currency.
+Using a **CFS**, we can increase the fungability of [any](https://github.com/2i2i/whitepaper/blob/main/Notes.md#fungable-nfts) **currency**.
 
-A chain of CFS can achieve arbitrary fungability.
+A chain of CFS can achieve arbitrary **fungability**.
 
 <br></br>
 <br></br>
@@ -357,19 +357,32 @@ Assuming liquidity, this market model thus provides the fairest valuation of any
 By changing the parameters, minimum $\underline{M}$ and importance $\mathcal{I}$, the seller can run a [multi-dim optimisation](https://github.com/2i2i/whitepaper/blob/main/Notes.md#multidim-optimisation) to find the type of market that maximises it's value.
 
 <br></br>
-## Maximum value $\Leftrightarrow$ Supply = Time
-Everyone has time and everyone knows time is most valuable.
-The widest and most valuable supply should run on the provably fairest market model. A v1 implementation is available and a v2 is being built.
+## Maximum value $\Leftrightarrow$ Supply = **time**
 
-As an 1st example application, we have chosen time as the supply. Available @ https://about.2i2i.app
+If this paper is correct in that the described market model results in the fairest valuation, then it should be used for all markets. Especially the most valuable market:
 
-2i2i is provably finds fairest value for time.
+**time**
 
-Using 2i2i for time makes most sense:
-Use the optimal system for the most important
+- Everyone has **time**
+- Everyone knows that **time** is most valuable.
 
-In a futuristic society, people could replace appointments with such a market for its time. Whenever you choose to interact with a person, instead of consulting a appointment schedule, consult the market. Importance and urgency are all expressed via the energy and information contained in every bid. 
+One could even replace appointments with such a market for ones **time**. Whenever you choose to interact with a person, instead of consulting an appointment schedule, consult the market. Importance and urgency are all expressed via the energy and information contained in every bid.
 
-When supply=time, all currencies are per $\Delta T$. Current technology already allows $\Delta T \le 1 \text{ sec}$.
+When **supply**=**time**, all currencies are per $\Delta T$. Current technology already allows $\Delta T \le 1 \text{ sec}$.
 
-Imagine the entire world harvesting the fairest amount of energy in exchange for the whatever information they can provide. 2i2i could in theory jump start the provably fairest economy ever.
+
+
+<br></br>
+## Efficient, fairest and most inclusive economy
+
+This market model allows 
+
+From micro-economics we know that a *fair* trade adds value to both parties.
+
+Liquid 2i2i markets would allow for the fairest trades.
+
+A collection of trades can be called an economy.
+
+A 2i2i based economy then would be the fairest economy.
+
+Imagine the entire world harvesting the fairest amount of energy in exchange for whatever information it can provide. 2i2i could in theory jump start the provably fairest and most inclusive economy ever.
