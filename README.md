@@ -85,7 +85,7 @@ Then
 
 $$\mathcal{C} = \mathcal{C}_\text{obj} \text{  } \dot{\cup} \text{  } \mathcal{C}_\text{sub}$$
 
-that is, any **currency** either has [objective value xor subjective value]().
+that is, any **currency** either has [objective value xor subjective value](https://github.com/2i2i/whitepaper/blob/main/Notes.md#objective-vs-subjective-value).
 
 We choose some
 
