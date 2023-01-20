@@ -109,7 +109,7 @@ The **amount** $A$ of each **objective** **bid** can be transformed into the cho
 
 $$B(T, A = (q, \text{ccy}, \text{FX}), \mathcal{P}) \rightarrow B_\text{base}(T, A = (\text{FX}\cdot q , \text{ccy}_\text{base}, \text{FX}\equiv 1), \mathcal{P})$$
 
-This means, without loss of generality, we can [assume](https://github.com/2i2i/whitepaper/blob/main/Notes.md#assuming) all **objective bids** to be denominated in the **base currency**.
+> This means, without loss of generality, we can [assume](https://github.com/2i2i/whitepaper/blob/main/Notes.md#assuming) all **objective bids** to be denominated in the **base currency**.
 
 <br></br>
 ## **Bid** Categories
