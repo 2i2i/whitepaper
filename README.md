@@ -1,4 +1,3 @@
-dsf ($\Delta$) to $\delta$
 # WORK IN PROGRESS
 
 # <b><p align="center">2i2i ~ the fairest market model</p></b>
@@ -168,6 +167,8 @@ We want to create a **market** function such that:
 
 - **importance** is respected
 
+- order of **objective** **bid**s is deterministic
+
 - **chrony bid**s are **serviced** chronologically
 
 - **highroller bid**s are **serviced** in order of value
@@ -175,6 +176,11 @@ We want to create a **market** function such that:
 - worst case **rank** for **chrony bids** are [finite and deterministic](https://github.com/2i2i/whitepaper/blob/main/Notes.md#chrony-only-worst-case-finite)
 
 - the **seller** can use it's own subjective value function to value **subjective bid**s
+
+<br></br>
+## Internal order
+
+**Chrony** **bid**s are **time** ordered, **highroller** **bids** are **value** ordered, **subjective** **bid**s are ordered by each **seller** *subjectively* and **lurker** **bid**s live in the projective infinity. Never.
 
 <br></br>
 ## Traditional **market**s as special cases
@@ -242,15 +248,15 @@ $$\mathcal{I} = \begin{pmatrix} \nu_\text{\bf{C\bf{HR}}} \\ \nu_\text{\bf{HR}} \
 
 Given the previous max $\sum\mathcal{I}-1$ number of bids $[B_n,\ldots,B_m]$, we want to choose the next **bid** $B_\text{next}$.
 
-First, we choose the next **bid** **category** as the **category** that brings our realized **importance** [closest](https://github.com/2i2i/whitepaper/blob/main/Notes.md#distance) ($\Delta$) to the target **importance** as set by the seller.
+First, we choose the next **bid** **category** as the **category** that brings our realized **importance** [closest](https://github.com/2i2i/whitepaper/blob/main/Notes.md#distance) ($\delta$) to the target **importance** as set by the seller.
 
-Calculate the realized **importance** $\hat{\mathcal{I}}$ including an assumed next **bid** **category** $\text{BC}(B_\text{next})$:
+Calculate the realized **importance** $\hat{\mathcal{I}}$ including an *assumed* next **bid** **category** $\text{BC}(B_\text{next})$:
 
 $$\hat{\mathcal{I}}=\begin{pmatrix} \hat{\nu}_\text{\bf{C\bf{HR}}} \\ \hat{\nu}_\text{\bf{HR}} \end{pmatrix}$$
 
 $$\hat{\nu}_\square = \frac{\\\#\\\{\text{BC}(B_i)==\square\\\}_{i=n\ldots m+1}}{m-n+1}$$
 
-Choose $\text{BC}(B_\text{next})$ as $\underset{\text{BC}(B_\text{next})}{\text{argmin }}\Delta(\mathcal{I}, \hat{\mathcal{I}})$
+Choose $\text{BC}(B_\text{next})$ as $\underset{\text{BC}(B_\text{next})}{\text{argmin }}\delta(\mathcal{I}, \hat{\mathcal{I}})$
 
 If the next **category** should be $\text{\bf{C\bf{HR}}}$, then $B_\text{next}$ is the chronogically next $\text{\bf{C\bf{HR}}}$ **bid** available.
 
@@ -265,7 +271,7 @@ If the next **category** should be $\text{\bf{SUBJ}}$, then $B_\text{next}$ can 
 A discussion of the choices is found [here](https://github.com/2i2i/whitepaper/blob/main/Notes.md#full-subj-choice-is-better).
 
 
-Note the next **category** can never be $\text{\bf{LURK}}$, as $\nu_\text{\bf{LURK}}=0$. The **seller** can convert $\text{\bf{LURK}}$ **bid**s into $\text{\bf{C\bf{HR}}}$ or $\text{\bf{HR}}$ **bid**s by changing the **parameters**.
+Note the next **category** can never be $\text{\bf{LURK}}$, as $\nu_\text{\bf{LURK}}=0$. The **seller** can convert $\text{\bf{LURK}}$ **bid**s into $\text{\bf{C\bf{HR}}}$ or $\text{\bf{HR}}$ **bid**s or vice-versa by changing the **minimum** $\underline{M}$.
 
 <br></br>
 ## Worst case **rank** is deterministic
@@ -276,7 +282,7 @@ Any **bid** can always choose to cancel, thereby improving the **rank** of all *
 
 - Worst and best case **rank** for a $\text{\bf{LURK}}$ bid is $\infty$.
 
-- Worst case **rank** for a $\text{\bf{SUBJ}}$ bid is $\infty$, the seller uses it's own subjective value function.
+- Worst case **rank** for a $\text{\bf{SUBJ}}$ bid is $\infty$, as the seller uses it's own subjective value function.
 
 - Worst case **rank** for a $\text{\bf{HR}}$ bid is $\infty$, as other the market could theoretically increase and stay higher.
 

@@ -18,7 +18,7 @@ Since the seller is using it's own subjective value function, there can be no ap
 
 <br></br>
 ## distance
-For $\Delta$, we can choose any 2-dim distance measure, e.g. the Euclidean metric.
+For $\delta$, we can choose any 2-dim distance measure, e.g. the Euclidean metric.
 
 <br></br>
 ## practical chrony
@@ -82,6 +82,10 @@ Every other currency is called subjective.
 We define a currency as any bundle of energy and information that can be transmitted from one entity to another, incl. bundles containing no energy (only information) xor only energy (no information).
 
 This provides the most generic definition possible.
+
+<br></br>
+## projective infinity
+Not formalized in this whitepaper.
 
 <br></br>
 ## whitepaper
