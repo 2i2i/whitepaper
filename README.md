@@ -1,3 +1,4 @@
+dsf ($\Delta$) to
 # WORK IN PROGRESS
 
 # <b><p align="center">2i2i ~ the fairest market model</p></b>
@@ -93,14 +94,14 @@ $$\text{FX}(\text{ccy}) = \text{FX}(\text{ccy}, T) = \text{FX}(\text{ccy}, \text
 
 as the **fair** exchange rate between $\text{ccy}$ and $\text{ccy}_\text{base}$, i.e.
 
-$$1  [\text{ccy}] = \text{FX}(\text{ccy})  [\text{ccy}_\text{base}]$$
+$$1 \text{ }\text{ }\text{ }\text{[ccy]} = \text{FX}(\text{ccy})  \text{ }\text{ }\text{ }\text{[ccy]}_\text{base}$$
 
 and
 
 $$\text{FX(ccy)} = ∅ \text{  if ccy}\in\mathcal{C}_\text{sub}$$
 
-
-Now we are going to categorise **bid**s. First, we call a **bid** $B$ **objective**
+<br></br>
+Before we categories the **bid**s, let's simplify them. First, we call a **bid** $B$ **objective**
 
 $$B \text{ is objective} \Leftrightarrow \text{ccy} \in \mathcal{C}_\text{obj}$$
 
@@ -118,11 +119,11 @@ This means, without loss of generality, we can [assume](https://github.com/2i2i/
 
 [Assuming](https://github.com/2i2i/whitepaper/blob/main/Notes.md#assuming) that the **min** value $\underline{M}$ is also in the **base currency**, we [define](https://github.com/2i2i/whitepaper/blob/main/Notes.md#practical-chrony) the following 4 **bid** categories:
 
-$$\text{chrony (\bf{C\bf{HR}})} \Leftrightarrow B \text{ is objective}\land q = \underline{M}$$
+$$\text{chrony (\bf{C\bf{HR}})} \Leftrightarrow B \text{ is objective} \text{ and } q = \underline{M}$$
 
-$$\text{highroller (\bf{HR})} \Leftrightarrow B \text{ is objective}\land q > \underline{M}$$
+$$\text{highroller (\bf{HR})} \Leftrightarrow B \text{ is objective} \text{ and } q > \underline{M}$$
 
-$$\text{lurker (\bf{LURK})} \Leftrightarrow B \text{ is objective}\land q < \underline{M}$$
+$$\text{lurker (\bf{LURK})} \Leftrightarrow B \text{ is objective} \text{ and } q < \underline{M}$$
 
 $$\text{subjective (\bf{SUBJ})} \Leftrightarrow B \text{ is subjective}$$
 
@@ -152,9 +153,9 @@ Amongst every subsequence of the ordered **bid**s $[B_n, \ldots, B_m]$ of length
 
 E.g. if
 
-$$\mathcal{I} = (\mathcal{I}_\text{\bf{C\bf{HR}}} = 2, \mathcal{I}_\text{\bf{HR}} = 3, \mathcal{I}_\text{\bf{LURK}} = 0, \mathcal{I}_\text{\bf{SUBJ}} = 0)$$
+$$\mathcal{I} = (\mathcal{I}_\text{\bf{C\bf{HR}}} = 2, \mathcal{I}_\text{\bf{HR}} = 3, \mathcal{I}_\text{\bf{LURK}} = 0, \mathcal{I}_\text{\bf{SUBJ}} = 1)$$
 
-then, on average, any subsequence of **bid**s **serviced** should contain 2 **chrony** and 3 **highroller** **bid**s.
+then, on average, any subsequence of **bid**s **serviced** should contain 2 **chrony**, 3 **highroller** **bid**s and 1 **subjective** **bid**.
 
 <br></br>
 <br></br>
@@ -194,7 +195,7 @@ $$\mathcal{I} = (\mathcal{I}_\text{\bf{C\bf{HR}}} = 0, \mathcal{I}_\text{\bf{HR}
 
 $$\mathcal{I} = (\mathcal{I}_\text{\bf{C\bf{HR}}} = 0, \mathcal{I}_\text{\bf{HR}} = 0, \mathcal{I}_\text{\bf{LURK}} = 0, \mathcal{I}_\text{\bf{SUBJ}} = 1)$$
 
-#### All other cases are mixed, innovative **market**s and would yield differing dynamics whenever changed
+#### All other cases are mixed, innovative **market**s and can yield differing dynamics.
 
 <br></br>
 ## The algorithm
@@ -249,7 +250,7 @@ $$\hat{\mathcal{I}}=\begin{pmatrix} \hat{\nu}_\text{\bf{C\bf{HR}}} \\ \hat{\nu}_
 
 $$\hat{\nu}_\square = \frac{\\\#\\\{\text{BC}(B_i)==\square\\\}_{i=n\ldots m+1}}{m-n+1}$$
 
-$$\text{BC}(B_\text{next})=\underset{\text{BC}(B_\text{next})}{\text{argmin }}\Delta(\mathcal{I}, \hat{\mathcal{I}})$$
+Choose $\text{BC}(B_\text{next})$ as $\underset{\text{BC}(B_\text{next})}{\text{argmin }}\Delta(\mathcal{I}, \hat{\mathcal{I}})$
 
 If the next **category** should be $\text{\bf{C\bf{HR}}}$, then $B_\text{next}$ is the chronogically next $\text{\bf{C\bf{HR}}}$ **bid** available.
 
