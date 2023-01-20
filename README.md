@@ -357,33 +357,17 @@ By changing the parameters, minimum $\underline{M}$ and importance $\mathcal{I}$
 <br></br>
 ## Provably fairest economy
 
-An **economy** is a set of **trade**s. The event of a **bid** getting **serviced** is a **trade**. If this market model provides the **fairest** valuation and with it the **fairest** trade, then the resulting economy is fairest economy possible. 
+An **economy** is a set of **trade**s. The event of a **bid** getting **serviced** is a **trade**. If this market model provides the **fairest** valuation and with it the **fairest** trade, then the resulting economy is fairest economy possible.
+
+Micro-economics teaches us that (specilization and) *fair* trading improves the value of all parties.
 
 <br></br>
 ## Maximum value $\Leftrightarrow$ Supply = **time**
 
 If this paper is correct in that the described market model results in the **fairest** valuation, then it should be used for all **market**s. Especially the most valuable market:
-
-[**time**]()
+[**time**](https://github.com/2i2i/whitepaper/blob/main/Notes.md#live-in-the-now)
 
 - Everyone has **time**
 - Everyone knows that **time** is most valuable.
 
 When **supply**=**time**, all currencies are per $\Delta T$. Current technology already allows $\Delta T \le 1 \text{ sec}$.
-
-
-
-<br></br>
-## Efficient, fairest and most inclusive economy
-
-This market model allows 
-
-From micro-economics we know that a *fair* trade adds value to both parties.
-
-Liquid 2i2i markets would allow for the fairest trades.
-
-A collection of trades can be called an economy.
-
-A 2i2i based economy then would be the fairest economy.
-
-Imagine the entire world harvesting the fairest amount of energy in exchange for whatever information it can provide. 2i2i could in theory jump start the provably fairest and most inclusive economy ever.
