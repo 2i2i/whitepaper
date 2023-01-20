@@ -6,7 +6,7 @@ Considering only supplies of positive value, since we can support arbitrarily sm
 
 <br></br>
 ## fairest
-The fairest value is achieved in the most open market possible based on the assumption that adding an intelligence to a group of intelligences increases the accuracy of the joined valuation of anything.
+The fairest value is achieved in the most open market possible based on the assumption that adding an intelligence to a group of intelligences increases the accuracy of the joined valuation of anything. It is valuation based on maximal information.
 
 <br></br>
 ## fungable NFTs

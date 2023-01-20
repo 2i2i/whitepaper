@@ -30,7 +30,7 @@ $$\mathcal{M}(\mathcal{S}, \mathcal{D}, B) = B_\text{next}$$
 
 $$B, B' \in \mathcal{D} \cup \\\{∅\\\}$$
 
-$∅$ represents an end, as follows. Simplifying $\mathcal{M}(\mathcal{S}, \mathcal{D}, B)$ to $\mathcal{M}(B)$.
+$∅$ represents an end, as follows. Simplifying $\mathcal{M}(\mathcal{S}, \mathcal{D}, B)$ to $\mathcal{M}(B)$,
 
 $$\mathcal{M}(∅)=B_\text{first}$$
 
@@ -39,7 +39,7 @@ $$\mathcal{M}(B_\text{last})=∅$$
 
 This then allows for an ordering of the **bid**s
 
-$$\mathcal{D} = [\mathcal{M}^1(∅), \mathcal{M}^2(∅), \ldots, \mathcal{M}^N(∅)] = [B_1, \ldots, B_N]$$
+$$\mathcal{D} = [B_1, \ldots, B_N] = [\mathcal{M}^1(∅), \mathcal{M}^2(∅), \ldots, \mathcal{M}^N(∅)] = \\\{\mathcal{M}^\text{rank}(∅)\\\}_{\text{rank}=1}^N$$
 
 In this paper, we will define a partial ordering and a total ordering that is **[fairest](https://github.com/2i2i/whitepaper/blob/main/Notes.md#fairest)**, most **[inclusive](https://github.com/2i2i/whitepaper/blob/main/Notes.md#most-inclusive)** and accomodates [all](https://github.com/2i2i/whitepaper/blob/main/Notes.md#all-markets) types of **market**s, as well as innovating new types of **market**s with a generic framework.
 
@@ -71,16 +71,11 @@ $$\mathcal{P} = \text{ the sellers parameters } T$$
 
 The **amount** $A$ contains a quantity $q$, a **currency** $\text{ccy}$ and an exchange rate to a **base currency** $\text{FX}$, all fixed at time $T$.
 
-<br></br>
-## Rank
-The **rank** of a **bid** $B$ is defined as the number of times a next has to be chosen to arrive at $B$
-
-$$\mathcal{M}^\text{rank}(∅) = B$$
 
 <br></br>
 ## Currency and FX
 
-A [**currency**](https://github.com/2i2i/whitepaper/blob/main/Notes.md#currency) $\text{ccy}$ is defined as a bundle of [energy and information](https://github.com/2i2i/whitepaper/blob/main/Notes.md#energy-and-info). Let $\mathcal{C}$ be the universe of all existing currencies.
+Let $\mathcal{C}$ be the universe of all existing [currencies](https://github.com/2i2i/whitepaper/blob/main/Notes.md#currency).
 
 Then
 
@@ -96,7 +91,7 @@ as the **base currency** and we define
 
 $$\text{FX}(\text{ccy}) = \text{FX}(\text{ccy}, T) = \text{FX}(\text{ccy}, \text{ccy}_\text{base}, T)$$
 
-as the fair exchange rate between $\text{ccy}$ and $\text{ccy}_\text{base}$, i.e.
+as the **fair** exchange rate between $\text{ccy}$ and $\text{ccy}_\text{base}$, i.e.
 
 $$1  [\text{ccy}] = \text{FX}(\text{ccy})  [\text{ccy}_\text{base}]$$
 
@@ -109,7 +104,7 @@ Now we are going to categorise **bid**s. First, we call a **bid** $B$ **objectiv
 
 $$B \text{ is objective} \Leftrightarrow \text{ccy} \in \mathcal{C}_\text{obj}$$
 
-if it is in an objective value currency.
+if it is of an objective value currency.
 
 
 The **amount** $A$ of each **objective** **bid** can be transformed into the chosen **base currency**, as follows:
@@ -123,7 +118,7 @@ This means, without loss of generality, we can [assume](https://github.com/2i2i/
 
 [Assuming](https://github.com/2i2i/whitepaper/blob/main/Notes.md#assuming) that the **min** value $\underline{M}$ is also in the **base currency**, we [define](https://github.com/2i2i/whitepaper/blob/main/Notes.md#practical-chrony) the following 4 **bid** categories:
 
-$$\text{chrony (CHR)} \Leftrightarrow B \text{ is objective}\land q = \underline{M}$$
+$$\text{chrony (\bf{CHR})} \Leftrightarrow B \text{ is objective}\land q = \underline{M}$$
 
 $$\text{highroller (HR)} \Leftrightarrow B \text{ is objective}\land q > \underline{M}$$
 
