@@ -104,6 +104,8 @@ means that the outputs will not change if the inputs do not change
 ## live in the now
 One could even replace appointments with such a market for ones **time**. Whenever you choose to interact with a person, instead of consulting an appointment schedule, consult the market. Importance and urgency are all expressed via the energy and information contained in every bid.
 
+Btw, time can e.g. easily be supplied via live media streams.
+
 <br></br>
 ## whitepaper
 Humanity keeps its reliable knowledge in whitepapers. Besides having an certain look, the important aspects are structure and methodology. Such a paper adds to reliable knowledge if approved by scholars. Archived markdown seems more powerful than a pdf.
