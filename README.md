@@ -1,4 +1,4 @@
-# <b><p align="center">2i2i ~ the fairest market model</p></b>
+# <b><p align="center">2i2i ~ the provably fairest and most inclusive market model</p></b>
 #### <p align="center">[1m1@2i2i.app](https://github.com/2i2i/whitepaper/blob/main/Notes.md#acknowledgement)</p>
 
 <br></br>
