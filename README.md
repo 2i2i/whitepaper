@@ -167,7 +167,7 @@ We want to create a **market** function such that:
 
 - **importance** is respected
 
-- order of **objective** **bid**s is objectively [deterministic]()
+- order of **objective** **bid**s is objectively [deterministic](https://github.com/2i2i/whitepaper/blob/main/Notes.md#deterministic)
 
 - internal category order is maintained
 
@@ -278,34 +278,13 @@ Note the next **category** can never be $\text{\bf{LURK}}$, as $\nu_\text{\bf{LU
 
 Any **bid** can always choose to cancel, thereby improving the **rank** of all **bid**s behind it. Hence we only need to talk about the worst case.
 
+Worst case rank is deterministic if we allow it to be $\infty$, which it is for **HR**, **SUBJ**, **LURK**.
+
 ### **CHR**
 The above algorithm keeps the worst case **rank** for **CHR** **bid**s [deterministic and finite]().
 
-This is mainly because each $\mathcal{I}$ is finite, the number of **bid**s is finite, internal **CHR** order is total and change of **parameters** locks all existing objective bids in a total order.
+This is mainly because each $\mathcal{I}$ is finite, the number of **bid**s is finite, internal **CHR** order is total and deterministic and change of **parameters** locks all existing objective bids in a total order.
 
-### **HR**
-Non-**CHR** **bid**s have worst case **rank** $\infty$.
-
-### **HR**
-
-### **HR**
-
-
-<br></br>
-## Worst case **rank** is deterministic
-
-
-*After* the creation of a **bid** $B$, we can simulate, as a mind experiment, the arrival of infinite many **bid**s of all categories possible:
-
-- Worst and best case **rank** for a $\text{\bf{LURK}}$ bid is $\infty$.
-
-- Worst case **rank** for a $\text{\bf{SUBJ}}$ bid is $\infty$, as the seller uses it's own subjective value function.
-
-- Worst case **rank** for a $\text{\bf{HR}}$ bid is $\infty$, as other the market could theoretically increase and stay higher.
-
-- Worst case **rank** for a $\text{\bf{C\bf{HR}}}$ bid is finite and deterministic, according to the importance $\mathcal{I}$.
-
-<br></br>
 
 
 

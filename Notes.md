@@ -10,7 +10,7 @@ The fairest value is achieved in the most open market possible based on the assu
 
 <br></br>
 ## fungable NFTs
-Even an NFT could in this manner be broken into smaller pieces. Having art with higher fungability increases the size of the demand, however it also seems to decrease the perceived value by many.
+Even an NFT could in this manner be broken into smaller pieces. Having art with higher fungability increases the size of the demand, however it also seems to decrease the perceived value by some.
 
 <br></br>
 ## full subj choice is better
