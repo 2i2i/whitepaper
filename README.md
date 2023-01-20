@@ -167,7 +167,7 @@ We want to create a **market** function such that:
 
 - **importance** is respected
 
-- order of **objective** **bid**s is deterministic
+- order of **objective** **bid**s is objectively [deterministic]()
 
 - internal category order is maintained
 
@@ -262,9 +262,11 @@ If the next **category** should be $\text{\bf{HR}}$, then $B_\text{next}$ is the
 
 If the next **category** should be $\text{\bf{SUBJ}}$, then $B_\text{next}$ can be chosen in the two following ways:
 
-1. $B_\text{next}$ is the chronogically next $\text{\bf{SUBJ}}$ **bid** available. However, the **seller** can choose to decline the **bid**, using it's subjective value function. [This gives a total ordering of the **bid**s](https://github.com/2i2i/whitepaper/blob/main/Notes.md#total-ordering).
+1. $B_\text{next}$ is the chronogically next $\text{\bf{SUBJ}}$ **bid** available. However, the **seller** can choose to decline the **bid**, using it's subjective value function.
 
-1. Let the **seller** choose one xor none from all the existing $\text{\bf{SUBJ}}$ **bid**s. This gives a partial ordering of the **bid**s.
+1. Let the **seller** choose one xor none from all the existing $\text{\bf{SUBJ}}$ **bid**s.
+
+>Either case results in a [total](https://github.com/2i2i/whitepaper/blob/main/Notes.md#total-ordering), deterministic and objective ordering of all the **objective** **bids** and a total subjective ordering of all the **subjective** **bid**s, both interwoven according to the chosen **importance** $\mathcal{I}$.
 
 A discussion of the choices is found [here](https://github.com/2i2i/whitepaper/blob/main/Notes.md#full-subj-choice-is-better).
 
@@ -272,9 +274,26 @@ A discussion of the choices is found [here](https://github.com/2i2i/whitepaper/b
 Note the next **category** can never be $\text{\bf{LURK}}$, as $\nu_\text{\bf{LURK}}=0$. The **seller** can convert $\text{\bf{LURK}}$ **bid**s into $\text{\bf{C\bf{HR}}}$ or $\text{\bf{HR}}$ **bid**s or vice-versa by changing the **minimum** $\underline{M}$.
 
 <br></br>
-## Worst case **rank** is deterministic
+## Worst case **rank**
 
 Any **bid** can always choose to cancel, thereby improving the **rank** of all **bid**s behind it. Hence we only need to talk about the worst case.
+
+### **CHR**
+The above algorithm keeps the worst case **rank** for **CHR** **bid**s [deterministic and finite]().
+
+This is mainly because each $\mathcal{I}$ is finite, the number of **bid**s is finite, internal **CHR** order is total and change of **parameters** locks all existing objective bids in a total order.
+
+### **HR**
+Non-**CHR** **bid**s have worst case **rank** $\infty$.
+
+### **HR**
+
+### **HR**
+
+
+<br></br>
+## Worst case **rank** is deterministic
+
 
 *After* the creation of a **bid** $B$, we can simulate, as a mind experiment, the arrival of infinite many **bid**s of all categories possible:
 

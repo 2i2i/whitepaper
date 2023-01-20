@@ -61,6 +61,10 @@ Any finite supply requires ordering of demand. All selling of any supply is appr
 This is a service guarantee for those bidding the minimum (chrony). A highroller is basically participating in an auction for a sooner service, which is only sooner iff $\mathcal{I}_\text{CHR} < \mathcal{I}_\text{HR}$. An subjective bid might never be serviced, as it depends on the seller's subjective value function. A lurker is by definition never serviced.
 
 <br></br>
+## deterministic and finite
+should be written up formally
+
+<br></br>
 ## auditability is better
 Even better than transparency is privacy with auditibility. This allows entities to maintain private information whilst satisfying society that everything is legal.
 
@@ -91,6 +95,10 @@ Not formalized in this whitepaper.
 <br></br>
 ## total ordering
 Objective bids already have deterministic ordering. If subjective bids are presented in time order, we get a total ordering using the sellers subjective value function. The total ordering is known only to the seller.
+
+<br></br>
+## deterministic
+means that the outputs will not change if the inputs do not change
 
 <br></br>
 ## whitepaper
