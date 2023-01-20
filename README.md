@@ -330,41 +330,44 @@ A **CFS** never rounds and only makes exact exchanges.
 
 Using a **CFS**, we can increase the fungability of [any](https://github.com/2i2i/whitepaper/blob/main/Notes.md#fungable-nfts) **currency**.
 
-A chain of CFS can achieve arbitrary **fungability**.
+> A chain of CFS can achieve arbitrary **fungability**.
 
 <br></br>
 <br></br>
 # <b>IV. Conclusion</b>
 <br></br>
 
-## Provably fairest market
+## Provably **fairest** market
 
 Consider:
 
 - We accomodate any supply of arbitrarily small or large value.
-- We allow any currency, whether those with objective value or any other, i.e. of subjective value.
-- We define currency as an arbitrarily fungible bundle of energy and information
+- We allow any currency, whether those of objective value xor subjective value.
+- We define currency as an arbitrarily fungible bundle of energy and information.
 - We accomodate the entire region of objective value currencies possible (below, at and above the min value).
-- We create the fairest (according to importance) sequence of servicing the demand
+- We create the desired (according to importance) sequence of servicing the demand
 - We allow for infinite types of dynamics incl. traditional markets as special cases, set via simple parameters.
 
 All these superlatives make this market model the most open possible.
 
-Assuming liquidity, this market model thus provides the fairest valuation of any supply.
+> Assuming liquidity, this market model thus provides the fairest valuation of any supply.
 
 By changing the parameters, minimum $\underline{M}$ and importance $\mathcal{I}$, the seller can run a [multi-dim optimisation](https://github.com/2i2i/whitepaper/blob/main/Notes.md#multidim-optimisation) to find the type of market that maximises it's value.
 
 <br></br>
+## Provably fairest economy
+
+An **economy** is a set of **trade**s. The event of a **bid** getting **serviced** is a **trade**. If this market model provides the **fairest** valuation and with it the **fairest** trade, then the resulting economy is fairest economy possible. 
+
+<br></br>
 ## Maximum value $\Leftrightarrow$ Supply = **time**
 
-If this paper is correct in that the described market model results in the fairest valuation, then it should be used for all markets. Especially the most valuable market:
+If this paper is correct in that the described market model results in the **fairest** valuation, then it should be used for all **market**s. Especially the most valuable market:
 
-**time**
+[**time**]()
 
 - Everyone has **time**
 - Everyone knows that **time** is most valuable.
-
-One could even replace appointments with such a market for ones **time**. Whenever you choose to interact with a person, instead of consulting an appointment schedule, consult the market. Importance and urgency are all expressed via the energy and information contained in every bid.
 
 When **supply**=**time**, all currencies are per $\Delta T$. Current technology already allows $\Delta T \le 1 \text{ sec}$.
 
