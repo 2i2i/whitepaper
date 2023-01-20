@@ -169,18 +169,16 @@ We want to create a **market** function such that:
 
 - order of **objective** **bid**s is deterministic
 
-- **chrony bid**s are **serviced** chronologically
+- internal category order is maintained
 
-- **highroller bid**s are **serviced** in order of value
-
-- worst case **rank** for **chrony bids** are [finite and deterministic](https://github.com/2i2i/whitepaper/blob/main/Notes.md#chrony-only-worst-case-finite)
+- worst case **rank** for **chrony** **bids** is [finite](https://github.com/2i2i/whitepaper/blob/main/Notes.md#chrony-only-worst-case-finite)
 
 - the **seller** can use it's own subjective value function to value **subjective bid**s
 
 <br></br>
-## Internal order
+## Internal category order
 
-**Chrony** **bid**s are **time** ordered, **highroller** **bids** are **value** ordered, **subjective** **bid**s are ordered by each **seller** *subjectively* and **lurker** **bid**s live in the projective infinity. Never.
+**Chrony** **bid**s are **time** ordered, **highroller** **bids** are **value** ordered, **subjective** **bid**s are ordered by each **seller** *subjectively* and **lurker** **bid**s live in the [projective infinity](https://github.com/2i2i/whitepaper/blob/main/Notes.md#projective-infinity), never serviced.
 
 <br></br>
 ## Traditional **market**s as special cases
@@ -264,7 +262,7 @@ If the next **category** should be $\text{\bf{HR}}$, then $B_\text{next}$ is the
 
 If the next **category** should be $\text{\bf{SUBJ}}$, then $B_\text{next}$ can be chosen in the two following ways:
 
-1. $B_\text{next}$ is the chronogically next $\text{\bf{SUBJ}}$ **bid** available. However, the **seller** can choose to decline the **bid**, using it's subjective value function. This gives a total ordering of the **bid**s.
+1. $B_\text{next}$ is the chronogically next $\text{\bf{SUBJ}}$ **bid** available. However, the **seller** can choose to decline the **bid**, using it's subjective value function. [This gives a total ordering of the **bid**s]().
 
 1. Let the **seller** choose one xor none from all the existing $\text{\bf{SUBJ}}$ **bid**s. This gives a partial ordering of the **bid**s.
 

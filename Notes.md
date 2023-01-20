@@ -52,8 +52,9 @@ This can be made a formal statement thanks to us defining **currency** as genera
 
 <br></br>
 ## all trade is sequential
-Serviced is used as meaning "traded". Also,
-having a finite supply requires ordering of demand. All selling of any supply is approximately sequential. Even selling digital copies of a product that seems unlimited, is in fact limited due to network bandwidth being limited and servers usually order demand on a "first-come, first-serve" basis. When supply is very large vs demand, then modeling a simultaneous trading sequentially, is not any loss at all, as the sequence can simply move very fast, giving the illution of simultaneouity.
+Serviced is used as meaning "traded".
+
+Any finite supply requires ordering of demand. All selling of any supply is approximately sequential and most selling is sequential. Even selling digital copies of a product that seems unlimited, is in fact limited due to network bandwidth being limited and servers usually order demand on a "first-come, first-serve" basis. When supply is very large vs demand, then modeling a simultaneous trading sequentially, is not any loss at all, as the sequence can simply move very fast, giving the illution of simultaneouity.
 
 <br></br>
 ## chrony only worst case finite
@@ -86,6 +87,10 @@ This provides the most generic definition possible.
 <br></br>
 ## projective infinity
 Not formalized in this whitepaper.
+
+<br></br>
+## total ordering
+Objective bids already have deterministic ordering. If subjective bids are presented in time order, we get a total ordering using the sellers subjective value function. The total ordering is known only to the seller.
 
 <br></br>
 ## whitepaper
