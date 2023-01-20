@@ -118,13 +118,13 @@ This means, without loss of generality, we can [assume](https://github.com/2i2i/
 
 [Assuming](https://github.com/2i2i/whitepaper/blob/main/Notes.md#assuming) that the **min** value $\underline{M}$ is also in the **base currency**, we [define](https://github.com/2i2i/whitepaper/blob/main/Notes.md#practical-chrony) the following 4 **bid** categories:
 
-$$\text{chrony (\bf{CHR})} \Leftrightarrow B \text{ is objective}\land q = \underline{M}$$
+$$\text{chrony (\bf{C\bf{HR}})} \Leftrightarrow B \text{ is objective}\land q = \underline{M}$$
 
-$$\text{highroller (HR)} \Leftrightarrow B \text{ is objective}\land q > \underline{M}$$
+$$\text{highroller (\bf{HR})} \Leftrightarrow B \text{ is objective}\land q > \underline{M}$$
 
-$$\text{lurker (LURK)} \Leftrightarrow B \text{ is objective}\land q < \underline{M}$$
+$$\text{lurker (\bf{LURK})} \Leftrightarrow B \text{ is objective}\land q < \underline{M}$$
 
-$$\text{subjective (SUBJ)} \Leftrightarrow B \text{ is subjective}$$
+$$\text{subjective (\bf{SUBJ})} \Leftrightarrow B \text{ is subjective}$$
 
 We can denote a **bid** $B$'s **category** as $\text{BC}(B)$.
 
@@ -133,11 +133,11 @@ We can denote a **bid** $B$'s **category** as $\text{BC}(B)$.
 
 The **seller** defines the **importance** per **bid** **category**
 
-$$\mathcal{I} = (\mathcal{I}_\text{CHR}, \mathcal{I}_\text{HR}, \mathcal{I}_\text{LURK}, \mathcal{I}_\text{SUBJ})$$
+$$\mathcal{I} = (\mathcal{I}_\text{\bf{C\bf{HR}}}, \mathcal{I}_\text{\bf{HR}}, \mathcal{I}_\text{\bf{LURK}}, \mathcal{I}_\text{\bf{SUBJ}})$$
 
 where each **importace** is a natural number
 
-$$\mathcal{I}_\square\in\mathbb{N}_{\ge 0}, \square\in\\\{\text{CHR}, \text{HR}, \text{LURK}, \text{SUBJ}\\\}$$
+$$\mathcal{I}_\square\in\mathbb{N}_{\ge 0}, \square\in\\\{\text{\bf{C\bf{HR}}}, \text{\bf{HR}}, \text{\bf{LURK}}, \text{\bf{SUBJ}}\\\}$$
 
 the market is activated
 
@@ -145,14 +145,14 @@ $$0 < \sum_\square\mathcal{I}_\square = \sum\mathcal{I}$$
 
 and the **[lurkers](https://github.com/2i2i/whitepaper/blob/main/Notes.md#why-lurkers)** never get serviced
 
-$$\mathcal{I}_\text{LURK} = 0$$
+$$\mathcal{I}_\text{\bf{LURK}} = 0$$
 
 
 Amongst every subsequence of the ordered **bid**s $[B_n, \ldots, B_m]$ of length $\sum\mathcal{I}$, on average, we get $\mathcal{I}_\square$ many of **bid** **category** $\square$.
 
 E.g. if
 
-$$\mathcal{I} = (\mathcal{I}_\text{CHR} = 2, \mathcal{I}_\text{HR} = 3, \mathcal{I}_\text{LURK} = 0, \mathcal{I}_\text{SUBJ} = 0)$$
+$$\mathcal{I} = (\mathcal{I}_\text{\bf{C\bf{HR}}} = 2, \mathcal{I}_\text{\bf{HR}} = 3, \mathcal{I}_\text{\bf{LURK}} = 0, \mathcal{I}_\text{\bf{SUBJ}} = 0)$$
 
 then, on average, any subsequence of **bid**s **serviced** should contain 2 **chrony** and 3 **highroller** **bid**s.
 
@@ -182,17 +182,17 @@ We want to create a **market** function such that:
 
 $$\underline{M} = \text{fixed price}$$
 
-$$\mathcal{I} = (\mathcal{I}_\text{CHR} = 1, \mathcal{I}_\text{HR} = 0, \mathcal{I}_\text{LURK} = 0, \mathcal{I}_\text{SUBJ} = 0)$$
+$$\mathcal{I} = (\mathcal{I}_\text{\bf{C\bf{HR}}} = 1, \mathcal{I}_\text{\bf{HR}} = 0, \mathcal{I}_\text{\bf{LURK}} = 0, \mathcal{I}_\text{\bf{SUBJ}} = 0)$$
 
 #### Auction
 
 $$\underline{M} = \text{min price}$$
 
-$$\mathcal{I} = (\mathcal{I}_\text{CHR} = 0, \mathcal{I}_\text{HR} = 1, \mathcal{I}_\text{LURK} = 0, \mathcal{I}_\text{SUBJ} = 0)$$
+$$\mathcal{I} = (\mathcal{I}_\text{\bf{C\bf{HR}}} = 0, \mathcal{I}_\text{\bf{HR}} = 1, \mathcal{I}_\text{\bf{LURK}} = 0, \mathcal{I}_\text{\bf{SUBJ}} = 0)$$
 
 #### Barter
 
-$$\mathcal{I} = (\mathcal{I}_\text{CHR} = 0, \mathcal{I}_\text{HR} = 0, \mathcal{I}_\text{LURK} = 0, \mathcal{I}_\text{SUBJ} = 1)$$
+$$\mathcal{I} = (\mathcal{I}_\text{\bf{C\bf{HR}}} = 0, \mathcal{I}_\text{\bf{HR}} = 0, \mathcal{I}_\text{\bf{LURK}} = 0, \mathcal{I}_\text{\bf{SUBJ}} = 1)$$
 
 #### All other cases are mixed, innovative **market**s and would yield differing dynamics whenever changed
 
@@ -222,19 +222,19 @@ The **importance** $\mathcal{I}$ can be converted into decimals as follows:
 
 $$\mathcal{I}\rightarrow\nu_\square = \frac{\mathcal{I}_\square}{\sum\mathcal{I}} \in [0;1]$$
 
-$$\square\in\\\{\text{CHR}, \text{HR}, \text{LURK}, \text{SUBJ}\\\}$$
+$$\square\in\\\{\text{\bf{C\bf{HR}}}, \text{\bf{HR}}, \text{\bf{LURK}}, \text{\bf{SUBJ}}\\\}$$
 
 We also know that
 
-$$\nu_\text{LURK} = 0$$
+$$\nu_\text{\bf{LURK}} = 0$$
 
 $$\sum_\square\nu_\square = 1$$
 
-$$\implies\nu_\text{SUBJ} = 1 - \nu_\text{CHR} - \nu_\text{HR}$$
+$$\implies\nu_\text{\bf{SUBJ}} = 1 - \nu_\text{\bf{C\bf{HR}}} - \nu_\text{\bf{HR}}$$
 
 which means that $\mathcal{I}$ can be represented as a 2-dim vector:
 
-$$\mathcal{I} = \begin{pmatrix} \nu_\text{CHR} \\ \nu_\text{HR} \end{pmatrix}$$
+$$\mathcal{I} = \begin{pmatrix} \nu_\text{\bf{C\bf{HR}}} \\ \nu_\text{\bf{HR}} \end{pmatrix}$$
 
 <br></br>
 ### 3. Define $\mathcal{M}$
@@ -245,26 +245,26 @@ First, we choose the next **bid** **category** as the **category** that brings o
 
 Calculate the realized **importance** $\hat{\mathcal{I}}$ including an assumed next **bid** **category** $\text{BC}(B_\text{next})$:
 
-$$\hat{\mathcal{I}}=\begin{pmatrix} \hat{\nu}_\text{CHR} \\ \hat{\nu}_\text{HR} \end{pmatrix}$$
+$$\hat{\mathcal{I}}=\begin{pmatrix} \hat{\nu}_\text{\bf{C\bf{HR}}} \\ \hat{\nu}_\text{\bf{HR}} \end{pmatrix}$$
 
 $$\hat{\nu}_\square = \frac{\\\#\\\{\text{BC}(B_i)==\square\\\}_{i=n\ldots m+1}}{m-n+1}$$
 
 $$\text{BC}(B_\text{next})=\underset{\text{BC}(B_\text{next})}{\text{argmin }}\Delta(\mathcal{I}, \hat{\mathcal{I}})$$
 
-If the next **category** should be $\text{CHR}$, then $B_\text{next}$ is the chronogically next $\text{CHR}$ **bid** available.
+If the next **category** should be $\text{\bf{C\bf{HR}}}$, then $B_\text{next}$ is the chronogically next $\text{\bf{C\bf{HR}}}$ **bid** available.
 
-If the next **category** should be $\text{HR}$, then $B_\text{next}$ is the value ordered next $\text{HR}$ **bid** available.
+If the next **category** should be $\text{\bf{HR}}$, then $B_\text{next}$ is the value ordered next $\text{\bf{HR}}$ **bid** available.
 
-If the next **category** should be $\text{SUBJ}$, then $B_\text{next}$ can be chosen in the two following ways:
+If the next **category** should be $\text{\bf{SUBJ}}$, then $B_\text{next}$ can be chosen in the two following ways:
 
-1. $B_\text{next}$ is the chronogically next $\text{SUBJ}$ **bid** available. However, the **seller** can choose to decline the **bid**, using it's subjective value function. This gives a total ordering of the **bid**s.
+1. $B_\text{next}$ is the chronogically next $\text{\bf{SUBJ}}$ **bid** available. However, the **seller** can choose to decline the **bid**, using it's subjective value function. This gives a total ordering of the **bid**s.
 
-1. Let the **seller** choose one xor none from all the existing $\text{SUBJ}$ **bid**s. This gives a partial ordering of the **bid**s.
+1. Let the **seller** choose one xor none from all the existing $\text{\bf{SUBJ}}$ **bid**s. This gives a partial ordering of the **bid**s.
 
 A discussion of the choices is found [here](https://github.com/2i2i/whitepaper/blob/main/Notes.md#full-subj-choice-is-better).
 
 
-Note the next **category** can never be $\text{LURK}$, as $\nu_\text{LURK}=0$. The **seller** can convert $\text{LURK}$ **bid**s into $\text{CHR}$ or $\text{HR}$ **bid**s by changing the **parameters**.
+Note the next **category** can never be $\text{\bf{LURK}}$, as $\nu_\text{\bf{LURK}}=0$. The **seller** can convert $\text{\bf{LURK}}$ **bid**s into $\text{\bf{C\bf{HR}}}$ or $\text{\bf{HR}}$ **bid**s by changing the **parameters**.
 
 <br></br>
 ## Worst case **rank** is deterministic
@@ -273,13 +273,13 @@ Any **bid** can always choose to cancel, thereby improving the **rank** of all *
 
 *After* the creation of a **bid** $B$, we can simulate, as a mind experiment, the arrival of infinite many **bid**s of all categories possible:
 
-- Worst and best case **rank** for a $\text{LURK}$ bid is $\infty$.
+- Worst and best case **rank** for a $\text{\bf{LURK}}$ bid is $\infty$.
 
-- Worst case **rank** for a $\text{SUBJ}$ bid is $\infty$, the seller uses it's own subjective value function.
+- Worst case **rank** for a $\text{\bf{SUBJ}}$ bid is $\infty$, the seller uses it's own subjective value function.
 
-- Worst case **rank** for a $\text{HR}$ bid is $\infty$, as other the market could theoretically increase and stay higher.
+- Worst case **rank** for a $\text{\bf{HR}}$ bid is $\infty$, as other the market could theoretically increase and stay higher.
 
-- Worst case **rank** for a $\text{CHR}$ bid is finite and deterministic, according to the importance $\mathcal{I}$.
+- Worst case **rank** for a $\text{\bf{C\bf{HR}}}$ bid is finite and deterministic, according to the importance $\mathcal{I}$.
 
 <br></br>
 
