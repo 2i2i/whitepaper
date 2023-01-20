@@ -262,7 +262,7 @@ If the next **category** should be $\text{\bf{HR}}$, then $B_\text{next}$ is the
 
 If the next **category** should be $\text{\bf{SUBJ}}$, then $B_\text{next}$ can be chosen in the two following ways:
 
-1. $B_\text{next}$ is the chronogically next $\text{\bf{SUBJ}}$ **bid** available. However, the **seller** can choose to decline the **bid**, using it's subjective value function. [This gives a total ordering of the **bid**s]().
+1. $B_\text{next}$ is the chronogically next $\text{\bf{SUBJ}}$ **bid** available. However, the **seller** can choose to decline the **bid**, using it's subjective value function. [This gives a total ordering of the **bid**s](https://github.com/2i2i/whitepaper/blob/main/Notes.md#total-ordering).
 
 1. Let the **seller** choose one xor none from all the existing $\text{\bf{SUBJ}}$ **bid**s. This gives a partial ordering of the **bid**s.
 
