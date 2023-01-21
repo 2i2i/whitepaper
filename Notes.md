@@ -24,11 +24,11 @@ For $\delta$, we can choose any 2-dim distance measure, e.g. the Euclidean metri
 ## practical chrony
 For practical reasons, such as real time FX changes, it can make sense to define the categories with a precision $\epsilon>0$, and the relative distance $\delta=\ln{\frac{q}{\underline{M}}}$ as follows
 
-$$\text{chrony (CHR)} \Leftrightarrow B \text{ is objective} \text{and} |\delta| \le \epsilon$$
+$$\text{chrony (CHR)} \Leftrightarrow B \text{ is objective} \text{ and } |\delta| \le \epsilon$$
 
-$$\text{highroller (HR)} \Leftrightarrow B \text{ is objective} \text{and} \delta > \epsilon$$
+$$\text{highroller (HR)} \Leftrightarrow B \text{ is objective} \text{ and } \delta > \epsilon$$
 
-$$\text{lurker (LURK)} \Leftrightarrow B \text{ is objective} \text{and} \delta < -\epsilon$$
+$$\text{lurker (LURK)} \Leftrightarrow B \text{ is objective} \text{ and } \delta < -\epsilon$$
 
 <br></br>
 ## why lurkers
