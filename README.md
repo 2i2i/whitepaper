@@ -334,6 +334,15 @@ Using a **CFS**, we have increased the fungability of [any](https://github.com/2
 
 $$\mathbb{F}(CFS(ccy, \phi)) = \phi \cdot \mathbb{F}(ccy)$$
 
+<br></br>
+## Infinitely inclusive
+
+Assume the value of the **supply** $\mathcal{S}$ is $\epsilon > 0$. $\epsilon$ can be arbitrarily small.
+
+By chaining CFS, we can keep increasing the **fungability** until $\epsilon$ can be represented exactly.
+
+$$\mathbb{F}^N(CFS(ccy, \phi)) = \phi^N \cdot \mathbb{F}(ccy)$$
+
 > A chain of CFS can achieve arbitrary **fungability**.
 
 
