@@ -326,6 +326,8 @@ A **CFS** is a simple, permissionless smart contract that exchanges the minimal 
 
 $\text{ccy}_2$ is created by and initially fully owned by the **CFS**. For the current intents and purposes, we can refer to $\text{ccy}_2$ as the **CFS**.
 
+$$\text{ccy}_2 \approx \text{CFS}(\text{ccy}_1, \phi)$$
+
 A **CFS** never rounds and only makes exact exchanges.
 
 Using a **CFS**, we have increased the fungability of [any](https://github.com/2i2i/whitepaper/blob/main/Notes.md#fungable-nfts) **currency** $\text{ccy}$
