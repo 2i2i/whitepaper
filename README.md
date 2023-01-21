@@ -322,13 +322,19 @@ $$\mathbb{F}(\text{NFT})=10^0=1$$
 <br></br>
 ## Constant Factor Stablecoin (**CFS**)
 
-A **CFS** is a simple, permissionless smart contract that exchanges 1 unit of a **currency** $\text{ccy}_1$ for $\phi$ units of $\text{ccy}_2$ and vice-versa, as available.
+A **CFS** is a simple, permissionless smart contract that exchanges the minimal unit of a **currency** $\text{ccy}_1$ for $\phi$ units of a new currency $\text{ccy}_2$ and vice-versa, as available.
+
+$\text{ccy}_2$ is created by and initially fully owned by the CFS. For the current intents and purposes, we can refer to $\text{ccy}_2$ as the **CFS**.
 
 A **CFS** never rounds and only makes exact exchanges.
 
-Using a **CFS**, we can increase the fungability of [any](https://github.com/2i2i/whitepaper/blob/main/Notes.md#fungable-nfts) **currency**.
+Using a **CFS**, we have increased the fungability of [any](https://github.com/2i2i/whitepaper/blob/main/Notes.md#fungable-nfts) **currency** $\text{ccy}$
+
+$$\mathbb{F}(CFS(ccy, \phi)) = \phi \cdot \mathbb{F}(ccy)$$
 
 > A chain of CFS can achieve arbitrary **fungability**.
+
+
 
 <br></br>
 <br></br>
