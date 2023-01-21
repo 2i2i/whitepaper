@@ -112,4 +112,4 @@ Humanity keeps its reliable knowledge in whitepapers. Besides having an certain 
 
 <br></br>
 ## acknowledgement
-The information found in this white paper was created by 1m1 with the help of Solli Kim. Thank you Solli for sharing your mind.
+The information found in this white paper was created by [1m1](https://1m1.io) with the help of Solli Kim. Thank you Solli for sharing your mind.
