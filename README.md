@@ -324,7 +324,7 @@ $$\mathbb{F}(\text{NFT})=10^0=1$$
 
 A **CFS** is a simple, permissionless smart contract that exchanges the minimal unit of a **currency** $\text{ccy}_1$ for $\phi$ units of a new currency $\text{ccy}_2$ and vice-versa, as available.
 
-$\text{ccy}_2$ is created by and initially fully owned by the CFS. For the current intents and purposes, we can refer to $\text{ccy}_2$ as the **CFS**.
+$\text{ccy}_2$ is created by and initially fully owned by the **CFS**. For the current intents and purposes, we can refer to $\text{ccy}_2$ as the **CFS**.
 
 A **CFS** never rounds and only makes exact exchanges.
 
