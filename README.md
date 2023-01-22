@@ -15,7 +15,7 @@
 
 Assume we have a **seller** with a finite **supply** $\mathcal{S}$ and there exists a **demand** $\mathcal{D}$ consisting of **bid**s.
 
-A **market** $\mathcal{M}$ is a function that determines the next **bid** to be [serviced](https://github.com/2i2i/whitepaper/blob/main/Notes.md#all-trade-is-sequential). Formally,
+A **market** $\mathcal{M}$ is a function that determines the *next* **bid** to be [serviced](https://github.com/2i2i/whitepaper/blob/main/Notes.md#all-trade-is-sequential). Formally,
 
 $$\mathcal{M}(\mathcal{S}, \mathcal{D}) = B$$
 
