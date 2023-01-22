@@ -26,7 +26,7 @@ More generally, we add a parameter to the **market** $\mathcal{M}$ to output the
 
 $$\mathcal{M}(\mathcal{S}, \mathcal{D}, B) = B_\text{next}$$
 
-$$B, B' \in \mathcal{D} \cup \\\{∅\\\}$$
+$$B, B_\text{next} \in \mathcal{D} \cup \\\{∅\\\}$$
 
 $∅$ represents an end, as follows. Simplifying $\mathcal{M}(\mathcal{S}, \mathcal{D}, B)$ to $\mathcal{M}(B)$,
 
