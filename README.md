@@ -65,7 +65,7 @@ $$T = \text{time}$$
 
 $$A = \text{(q, ccy, FX)} \text{ is the amount of the bid}$$
 
-$$\mathcal{P} = \text{ the sellers parameters } T$$
+$$\mathcal{P} = \text{ the sellers parameters at time } T$$
 
 The **amount** $A$ contains a quantity $q$, a **currency** $\text{ccy}$ and an exchange rate to a **base currency** $\text{FX}$, all fixed at time $T$.
 
