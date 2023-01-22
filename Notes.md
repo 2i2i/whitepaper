@@ -2,7 +2,7 @@
 
 <br></br>
 ## most inclusive
-Considering only supplies of positive value, since we can support arbitrarily small or large values, in any type currency, we are most inclusive.
+Considering only supplies of positive value, since we can support arbitrarily small or large values, in any type currency, we are infinitely inclusive. Being infinitely inclusive also makes it most inclusive.
 
 <br></br>
 ## fairest
