@@ -246,7 +246,7 @@ Given the previous max $\sum\mathcal{I}-1$ number of bids $[B_n,\ldots,B_m]$, we
 
 First, we choose the next **bid** **category** as the **category** that brings our realized **importance** [closest](https://github.com/2i2i/whitepaper/blob/main/Notes.md#distance) ($\delta$) to the target **importance** as set by the seller.
 
-Calculate the realized **importance** $\hat{\mathcal{I}}$ including an *assumed* next **bid** **category** $\text{BC}(B_\text{next})$:
+To that end, calculate the realized **importance** $\hat{\mathcal{I}}$ including an *assumed* next **bid** **category** $\text{BC}(B_\text{next})$:
 
 $$\hat{\mathcal{I}}=\begin{pmatrix} \hat{\nu}_\text{\bf{C\bf{HR}}} \\ \hat{\nu}_\text{\bf{HR}} \end{pmatrix}$$
 
