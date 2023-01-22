@@ -246,13 +246,13 @@ Given the previous max $\sum\mathcal{I}-1$ number of bids $[B_n,\ldots,B_m]$, we
 
 First, we choose the next **bid** **category** as the **category** that brings our realized **importance** [closest](https://github.com/2i2i/whitepaper/blob/main/Notes.md#distance) ($\delta$) to the target **importance** as set by the seller.
 
-To that end, calculate the realized **importance** $\hat{\mathcal{I}}$ including an *assumed* next **bid** **category** $\text{BC}(B_\text{next})$:
+To that end, calculate the realized **importance** $\hat{\mathcal{I}}$ including an *assumed* next **bid** **category** $\text{BC}(B_\text{next})$
 
 $$\hat{\mathcal{I}}=\begin{pmatrix} \hat{\nu}_\text{\bf{C\bf{HR}}} \\ \hat{\nu}_\text{\bf{HR}} \end{pmatrix}$$
 
 $$\hat{\nu}_\square = \frac{\\\#\\\{\text{BC}(B_i)==\square\\\}_{i=n\ldots m+1}}{m-n+1}$$
 
-Choose $\text{BC}(B_\text{next})$ as $\underset{\text{BC}(B_\text{next})}{\text{argmin }}\delta(\mathcal{I}, \hat{\mathcal{I}})$
+and choose $\text{BC}(B_\text{next})$ as $\underset{\text{BC}(B_\text{next})}{\text{argmin }}\delta(\mathcal{I}, \hat{\mathcal{I}})$
 
 If the next **category** should be $\text{\bf{C\bf{HR}}}$, then $B_\text{next}$ is the chronogically next $\text{\bf{C\bf{HR}}}$ **bid** available.
 
