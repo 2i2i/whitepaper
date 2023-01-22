@@ -48,7 +48,7 @@ Every seller has the right to define it's own minimum value for its supply.
 
 <br></br>
 ## all markets
-This can be made a formal statement thanks to us defining **currency** as generally as possible.
+Maybe this can be made into a formal statement thanks to us defining **currency** as generally as possible.
 
 <br></br>
 ## all trade is sequential
