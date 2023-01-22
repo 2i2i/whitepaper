@@ -61,7 +61,7 @@ Each **bid** $B$ looks as follows:
 
 $$B = (T, A, \mathcal{P})$$
 
-$$T = \text{time}$$
+$$T = \text{time of creation}$$
 
 $$A = \text{(q, ccy, FX)} \text{ is the amount of the bid}$$
 
