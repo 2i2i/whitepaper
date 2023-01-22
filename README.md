@@ -152,7 +152,7 @@ E.g. if
 
 $$\mathcal{I} = (\mathcal{I}_\text{\bf{C\bf{HR}}} = 2, \mathcal{I}_\text{\bf{HR}} = 3, \mathcal{I}_\text{\bf{LURK}} = 0, \mathcal{I}_\text{\bf{SUBJ}} = 1)$$
 
-then, on average, any subsequence of **bid**s **serviced** should contain 2 **chrony**, 3 **highroller** **bid**s and 1 **subjective** **bid**.
+then, on average, any subsequence of 6 **bid**s **serviced** should contain 2 **chrony**, 3 **highroller** **bid**s and 1 **subjective** **bid**.
 
 <br></br>
 <br></br>
