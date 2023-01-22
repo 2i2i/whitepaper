@@ -309,7 +309,7 @@ Smart contracts are autonomous, decentralized apps. The described market model i
 
 A **currency** is called **fungible** if it is available in varying units.
 
-We can define the **fungability** $\mathbb{F}$ of a **currency** as the ratio of a base unit to the minimal unit.
+We can define the **fungability** $\mathbb{F}$ of a **currency** as the ratio of it's base unit to it's minimal unit.
 
 E.g. 
 
