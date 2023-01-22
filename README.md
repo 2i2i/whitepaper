@@ -48,7 +48,7 @@ The **seller** sets the following **parameters** $\mathcal{P}$:
 
 $$\mathcal{P} = (\underline{M}, \mathcal{I})$$
 
-$$\underline{M} \ge 0 \text{ minimum value that a bid needs to have}$$
+$$\underline{M} \ge 0 \text{ minimum value of the supply}$$
 
 $$\mathcal{I} = \text{importance}$$
 
