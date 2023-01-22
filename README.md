@@ -98,7 +98,7 @@ and
 $$\text{FX(ccy)} = ∅ \text{  if ccy}\in\mathcal{C}_\text{sub}$$
 
 <br></br>
-Before we categories the **bid**s, let's simplify them. First, we call a **bid** $B$ **objective**
+Before we categorize the **bid**s, let's simplify them. First, we call a **bid** $B$ **objective**
 
 $$B \text{ is objective} \Leftrightarrow \text{ccy} \in \mathcal{C}_\text{obj}$$
 
