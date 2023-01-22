@@ -372,7 +372,7 @@ By changing the parameters, minimum $\underline{M}$ and importance $\mathcal{I}$
 <br></br>
 ## Provably fairest economy
 
-An **economy** is a set of **trade**s. The event of a **bid** getting **serviced** is a **trade**. If this market model provides the **fairest** valuation and with it the **fairest** trade, then the resulting economy is fairest economy possible.
+An **economy** is a set of **trade**s. The event of a **bid** getting **serviced** is a **trade**. If this market model provides the **fairest** valuation and with it the **fairest** trade, then the resulting **economy** is **fairest** **economy** possible.
 
 Micro-economics teaches us that (specilization and) *fair* trading improves the value of all parties.
 
