@@ -332,7 +332,7 @@ A **CFS** never rounds and only makes exact exchanges.
 
 Using a **CFS**, we have increased the fungability of [any](https://github.com/2i2i/whitepaper/blob/main/Notes.md#fungable-nfts) **currency** $\text{ccy}$
 
-$$\mathbb{F}(CFS(ccy, \phi)) = \phi \cdot \mathbb{F}(ccy)$$
+$$\mathbb{F}(\text{CFS}(ccy, \phi)) = \phi \cdot \mathbb{F}(ccy)$$
 
 <br></br>
 ## Infinitely inclusive
@@ -341,7 +341,7 @@ Assume the value of the **supply** $\mathcal{S}$ is $\epsilon > 0$. $\epsilon$ c
 
 By chaining CFS, we can keep increasing the **fungability** until $\epsilon$ can be represented exactly.
 
-$$\mathbb{F}^N(CFS(ccy, \phi)) = \phi^N \cdot \mathbb{F}(ccy)$$
+$$\mathbb{F}(\text{CFS}^N(ccy, \phi)) = \phi^N \cdot \mathbb{F}(ccy)$$
 
 > A chain of CFS can achieve arbitrary **fungability**.
 
