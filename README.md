@@ -274,7 +274,7 @@ Note the next **category** can never be $\text{\bf{LURK}}$, as $\nu_\text{\bf{LU
 <br></br>
 ## Worst case **rank**
 
-Any **bid** can always choose to cancel, thereby improving the **rank** of all **bid**s behind it. Hence we only need to talk about the worst case.
+Any **bid** can always choose to cancel, thereby *improving* the **rank** of all **bid**s behind it. Hence we only need to talk about the worst case.
 
 Worst case rank is deterministic if we allow it to be $\infty$, which it is for **HR**, **SUBJ**, **LURK**.
 
