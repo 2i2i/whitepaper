@@ -358,7 +358,7 @@ Consider:
 
 - We accomodate any supply of arbitrarily small or large value.
 - We allow any currency, whether those of objective value xor subjective value.
-- We define currency as an arbitrarily fungible bundle of energy and information.
+- We define currency as an arbitrarily fungible bundle of arbitrary energy and information.
 - We accomodate the entire region of objective value currencies possible (below, at and above the min value).
 - We create the desired (according to importance) sequence of servicing the demand
 - We allow for infinite types of dynamics incl. traditional markets as special cases, set via simple parameters.
