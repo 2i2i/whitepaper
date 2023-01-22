@@ -44,7 +44,7 @@ Energy and information as defined by the Sciences, as two fundamental elements o
 
 <br></br>
 ## min value
-Every seller has the right to define it's own minimum value for a trade.
+Every seller has the right to define it's own minimum value for its supply.
 
 <br></br>
 ## all markets
