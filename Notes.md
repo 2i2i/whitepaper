@@ -74,7 +74,7 @@ Based on my own intensive research on highly noisy and highly dimensional optimi
 
 <br></br>
 ## implementation
-about.2i2i.app is the v1 version with supply=time. A fullv2 version for any supply and fully web3 will be built.
+about.2i2i.app is the v1 version with supply=time. A full v2 version for any supply and fully web3 will be built.
 
 <br></br>
 ## objective vs subjective value
