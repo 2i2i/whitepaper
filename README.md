@@ -330,7 +330,7 @@ $$\text{ccy}_2 \approx \text{CFS}(\text{ccy}_1, \phi)$$
 
 A **CFS** never rounds and only makes exact exchanges.
 
-Using a **CFS**, we have increased the fungability of [any](https://github.com/2i2i/whitepaper/blob/main/Notes.md#fungable-nfts) **currency** $\text{ccy}$
+Using a **CFS**, we have increased the **fungability** of [any](https://github.com/2i2i/whitepaper/blob/main/Notes.md#fungable-nfts) **currency** $\text{ccy}$
 
 $$\mathbb{F}(\text{CFS}(ccy, \phi)) = \phi \cdot \mathbb{F}(ccy)$$
 
